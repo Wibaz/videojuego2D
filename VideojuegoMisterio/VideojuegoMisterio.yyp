@@ -306,7 +306,7 @@
             "Key": "c24f722e-4831-4679-853c-24569a4febee",
             "Value": {
                 "id": "724e1307-e119-487b-85cc-21c1bfdd74f8",
-                "resourcePath": "sprites\/sprMenuSelector\/sprMenuSelector.yy",
+                "resourcePath": "sprites\/sprMenuPointer\/sprMenuPointer.yy",
                 "resourceType": "GMSprite"
             }
         },
