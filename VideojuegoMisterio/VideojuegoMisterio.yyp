@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1c3042c9-62a7-4a6f-a7b4-563dccc9af88",
+            "Value": {
+                "id": "f8ce071c-b88f-4ad2-941a-95937f41a86b",
+                "resourcePath": "sprites\\sprPlayerUP\\sprPlayerUP.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e4c829e-9c06-4880-94c0-d9d746b3533a",
             "Value": {
                 "id": "0c599d2f-b1cf-485d-a7ee-1d3e744f3739",
@@ -99,6 +107,14 @@
             "Value": {
                 "id": "be09f9fb-d84b-42c2-8124-9d0a5e26f750",
                 "resourcePath": "sprites\/sprite5\/sprite5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "233de121-2aa0-47fa-9f3b-110f815bc392",
+            "Value": {
+                "id": "ad158ffb-4d54-41f9-9e3e-d66b9a7890cc",
+                "resourcePath": "sprites\\sprPlayerLeft\\sprPlayerLeft.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -188,6 +204,14 @@
                 "id": "e7e2bd2b-98e6-4474-8d5d-4092da420968",
                 "resourcePath": "views\/6de538e6-6e16-4751-813f-8a5f67b4b8d0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "700d969a-4749-4d21-a022-661023e2d0a9",
+            "Value": {
+                "id": "b9834284-0c81-4a88-8f87-0bde661e7373",
+                "resourcePath": "sprites\\sprPlayerRight\\sprPlayerRight.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -284,6 +308,14 @@
                 "id": "667a0cd5-bb3a-4e99-8ea5-07b5f1e90148",
                 "resourcePath": "options\/linux\/options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a9756217-8bf0-4d2d-a932-bf6e682cdea9",
+            "Value": {
+                "id": "c284d39f-90f3-4564-be10-1c3586e2da33",
+                "resourcePath": "sprites\\sprPlayerDown\\sprPlayerDown.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
