@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "21192b96-0775-4090-b7a4-03888895373e",
+            "Value": {
+                "id": "2f6a5853-eedb-4e95-9ad0-340460df675e",
+                "resourcePath": "sprites\\sprManoDchaGeneral\\sprManoDchaGeneral.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "218f3495-d9a4-432f-a39e-ae86cbd0e240",
             "Value": {
                 "id": "d817d414-0034-41e7-a6cf-c7db610f58df",
@@ -207,6 +215,14 @@
             }
         },
         {
+            "Key": "3bd38443-200e-45d5-b6fe-2caaa3b90e13",
+            "Value": {
+                "id": "a7a71da5-54fc-43b4-8b5c-8cb8450025cc",
+                "resourcePath": "sprites\\sprNathanGeneral\\sprNathanGeneral.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f468d59-c1a6-471e-9c91-51ed66ca8cdf",
             "Value": {
                 "id": "db9d269d-7ffd-4d6d-b56b-c325af778937",
@@ -244,6 +260,14 @@
                 "id": "e8b6830d-d255-4702-834d-2c29f48c636a",
                 "resourcePath": "views\\52cf57ea-f9a3-4c03-8e94-bb1f40ac8409.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "53ed5464-835d-435a-96db-d52751ca5824",
+            "Value": {
+                "id": "c2900751-14b7-4b40-993a-e9282e3d63e2",
+                "resourcePath": "sprites\\sprIbukiGeneral\\sprIbukiGeneral.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -307,6 +331,14 @@
             "Value": {
                 "id": "b9834284-0c81-4a88-8f87-0bde661e7373",
                 "resourcePath": "sprites\\sprPlayerRight\\sprPlayerRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7baa6b06-0be0-4ff1-8639-dbfd086e4e2c",
+            "Value": {
+                "id": "a060114c-df82-4835-9b10-98fe8405196c",
+                "resourcePath": "sprites\\sprEzraGeneral\\sprEzraGeneral.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -524,6 +556,14 @@
                 "id": "0badb7af-af32-4565-a72c-847a220e6d72",
                 "resourcePath": "tilesets\\tileset17\\tileset17.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "d4a6c540-1eca-41de-b758-53ffd063aad8",
+            "Value": {
+                "id": "25f36907-7558-462f-a3ab-b4ea79fca27c",
+                "resourcePath": "sprites\\sprLariaGeneral\\sprLariaGeneral.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
