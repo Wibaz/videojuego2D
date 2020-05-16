@@ -3,28 +3,30 @@ var movX = 0;
 var movY = 0;
 var spritePlayer=sprite_index;
 
-if (keyboard_check(vk_left))
-{
-	spritePlayer=sprPlayerLeft;
-    movX -=1;
+if (objGame.state == "IN_GAME") {
+	if (keyboard_check(vk_left))
+	{
+		spritePlayer=sprPlayerLeft;
+	    movX -=1;
+	}
+	if (keyboard_check(vk_right))
+	{
+		spritePlayer=sprPlayerRight
+	    movX += 1;
+	}
+	if (keyboard_check(vk_up))
+	{
+		spritePlayer=sprPlayerUp
+	    movY -= 1;
+	}
+	if (keyboard_check(vk_down))
+	{
+		spritePlayer=sprPlayerDown
+	    movY += 1;
+	}
+	if (spritePlayer!=sprite_index)
+		sprite_index=spritePlayer;
 }
-if (keyboard_check(vk_right))
-{
-	spritePlayer=sprPlayerRight
-    movX += 1;
-}
-if (keyboard_check(vk_up))
-{
-	spritePlayer=sprPlayerUp
-    movY -= 1;
-}
-if (keyboard_check(vk_down))
-{
-	spritePlayer=sprPlayerDown
-    movY += 1;
-}
-if (spritePlayer!=sprite_index)
-	sprite_index=spritePlayer
 
 //calculate the new velocities with aceleration
 

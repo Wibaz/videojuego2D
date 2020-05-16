@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "1d06ec3f-8a8c-4960-bc78-440aff519c91",
+            "Value": {
+                "id": "8a11edd4-c4c3-4fe0-8f35-1b1926b7fc31",
+                "resourcePath": "sprites\\sprTP\\sprTP.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e1248e0-64ac-4c6e-92f2-d194582dd517",
             "Value": {
                 "id": "db8c7448-9976-4c15-bb9d-e6aac146074a",
@@ -263,6 +271,14 @@
             }
         },
         {
+            "Key": "4b5eea80-6825-4bb6-9ede-4dfdb485be58",
+            "Value": {
+                "id": "ef64cc43-4f0d-4967-97d8-eb0636b1a689",
+                "resourcePath": "objects\\objGame\\objGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4bda833f-0087-4dd4-9a59-1c024aacd886",
             "Value": {
                 "id": "c6a7d4e0-152b-42ab-8c60-fbf35a6446a9",
@@ -396,6 +412,14 @@
                 "id": "e6b65b55-ddaf-4a31-a996-de252f9dea80",
                 "resourcePath": "sprites\/sprite6\/sprite6.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "836dccb8-febc-4b7a-a291-87b83de9f01e",
+            "Value": {
+                "id": "01e8a4e8-4515-434f-a415-67a50d1d7392",
+                "resourcePath": "objects\\objTP\\objTP.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -660,6 +684,14 @@
                 "id": "8ba5368a-201f-4a88-9e07-5490c94970ad",
                 "resourcePath": "sprites\/sprite9\/sprite9.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eea6ad96-95c5-4432-afd6-02fa59d42eb3",
+            "Value": {
+                "id": "bc202f4a-e186-4fbc-b06a-a5b671b9154c",
+                "resourcePath": "rooms\\Borrar\\Borrar.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
