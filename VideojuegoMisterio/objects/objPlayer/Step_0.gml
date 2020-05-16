@@ -40,4 +40,17 @@ var offsetSpeedY = targetSpeedY - vspeed;
 offsetSpeedY = clamp(offsetSpeedY, -accel, accel);
 vspeed+=offsetSpeedY;
 
+//computer
+if (place_meeting(x,y,objGoToComputer)) {
+	if (keyboard_check(vk_space)) {
+		global.PX = objPlayer.x;
+		global.PY = objPlayer.y;
+		objPlayer.x = 10000;
+		objPlayer.y = 10000;
+		room_goto(Computer);
+	}
+}
+
+
+
 
