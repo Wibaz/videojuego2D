@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "02c6a238-6999-4cfb-855b-73d06392494c",
+            "Value": {
+                "id": "73cd0855-63bc-415e-856f-572b1dcbe2d9",
+                "resourcePath": "objects\\objLaria\\objLaria.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "06177f77-38cb-4487-a8fe-bcaf535676ba",
             "Value": {
                 "id": "cab04d8e-0a2a-4220-835f-9040bdb71391",
@@ -111,6 +119,14 @@
             }
         },
         {
+            "Key": "1e1248e0-64ac-4c6e-92f2-d194582dd517",
+            "Value": {
+                "id": "db8c7448-9976-4c15-bb9d-e6aac146074a",
+                "resourcePath": "sprites\\sprTextBox\\sprTextBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e4c829e-9c06-4880-94c0-d9d746b3533a",
             "Value": {
                 "id": "0c599d2f-b1cf-485d-a7ee-1d3e744f3739",
@@ -175,11 +191,27 @@
             }
         },
         {
+            "Key": "2a7bb9e7-fe55-42e2-93ad-5be5ba17f645",
+            "Value": {
+                "id": "196ce457-55e1-4a17-a308-82371f87a5a5",
+                "resourcePath": "objects\\objTextBox\\objTextBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "325475c7-f376-4ba7-81b3-bfd1ce1fcc0d",
             "Value": {
                 "id": "0bd4314c-364c-4b53-a9da-716c23e6a719",
                 "resourcePath": "objects\/objMenu\/objMenu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "33474beb-871f-408e-a623-cfccb7aea002",
+            "Value": {
+                "id": "61d9eed4-0cb4-4fe3-9c56-2a1c5ed53a2a",
+                "resourcePath": "fonts\\fntTextBox\\fntTextBox.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -335,6 +367,14 @@
             }
         },
         {
+            "Key": "7b658187-b761-430e-91fd-be3d417bda38",
+            "Value": {
+                "id": "80325da6-03e9-4fbf-b7e4-5da4df9481b2",
+                "resourcePath": "objects\\objEzra\\objEzra.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7baa6b06-0be0-4ff1-8639-dbfd086e4e2c",
             "Value": {
                 "id": "a060114c-df82-4835-9b10-98fe8405196c",
@@ -379,6 +419,14 @@
             "Value": {
                 "id": "848874ac-6394-4703-ac81-67ae5b368240",
                 "resourcePath": "objects\\objInvisibleWall\\objInvisibleWall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8aec8dee-63d7-43e9-bb01-61263b73284c",
+            "Value": {
+                "id": "0b0a85cc-2955-4b17-9384-1acad7d484b4",
+                "resourcePath": "objects\\objParentNPC\\objParentNPC.yy",
                 "resourceType": "GMObject"
             }
         },
