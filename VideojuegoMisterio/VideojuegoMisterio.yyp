@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "9e3e1345-0fbc-4b36-983b-9c86312de822",
+            "Value": {
+                "id": "12cf3aa5-eb0d-422a-b7df-210e0243623e",
+                "resourcePath": "sprites\\sprMenuOn\\sprMenuOn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9eb6d19e-a239-4fe8-bd14-a51d7f1a94f8",
             "Value": {
                 "id": "8cf283cc-c182-4b79-8c83-2795d6b260c2",
@@ -588,6 +596,14 @@
                 "id": "60059bc7-220b-4c05-9c20-c422be229a93",
                 "resourcePath": "views\/a2c97ecb-32ba-485f-a764-5da80b82c87e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a8121e25-e7d9-4697-9a65-cf4ddb2921e5",
+            "Value": {
+                "id": "e2842de9-d5ed-42b8-b52a-471c7c39dc0b",
+                "resourcePath": "sprites\\sprPlayOn\\sprPlayOn.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -764,6 +780,14 @@
                 "id": "bc202f4a-e186-4fbc-b06a-a5b671b9154c",
                 "resourcePath": "rooms\\Borrar\\Borrar.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "f1d0c76a-99f4-4b75-bcc3-6f9fdc29256d",
+            "Value": {
+                "id": "98b9855d-b981-46d2-b756-25bbff0aa045",
+                "resourcePath": "sprites\\sprExitOn\\sprExitOn.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -22,7 +22,7 @@ else if (keyboard_check_released(vk_return))
 			break;
 			
 		case 1:
-			game_end();
+			show_message("Not implemented yet");
 			break;
 			
 		case 2:
