@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "50a1c866-e06c-4152-b7a9-1a9d93c9eaf7",
+            "Value": {
+                "id": "a13d99de-056d-4e1b-9e0b-7ff588af969d",
+                "resourcePath": "sprites\\sprPuzlzeEscenario\\sprPuzlzeEscenario.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "522b7542-2dfb-44cc-9cb5-a2b2ea5b167f",
             "Value": {
                 "id": "09e5d857-d9fd-41c9-8940-fa92efff2643",
@@ -396,6 +404,14 @@
                 "id": "627548b1-6b08-46a4-b702-722a916b01c0",
                 "resourcePath": "views\/6378d3a4-dcf1-48a0-ab58-8a26bb9cfb35.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6401ef46-afa5-478f-87f0-5edf1fceb725",
+            "Value": {
+                "id": "5e29f1ec-dde2-493b-9a9f-9c5b301607dc",
+                "resourcePath": "objects\\objPuzzleEescenario\\objPuzzleEescenario.yy",
+                "resourceType": "GMObject"
             }
         },
         {
