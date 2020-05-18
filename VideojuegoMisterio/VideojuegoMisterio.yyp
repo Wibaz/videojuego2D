@@ -591,6 +591,14 @@
             }
         },
         {
+            "Key": "99533c81-009e-48b8-aa7a-cae1feb2ed3b",
+            "Value": {
+                "id": "adbc814e-fc3b-40e5-bb65-5e540b5a0db3",
+                "resourcePath": "objects\\objInvisibleWall2\\objInvisibleWall2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9aedfd23-091e-4614-9bfd-de1db9d01021",
             "Value": {
                 "id": "73baca76-9856-4f29-8b76-83c5219569d4",
@@ -884,6 +892,14 @@
                 "id": "1d9b9543-4602-4c61-9801-2345493576fe",
                 "resourcePath": "tilesets\\tileset12\\tileset12.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "f9d8554f-d6ec-451a-8c17-125254b921c4",
+            "Value": {
+                "id": "e2a6c24d-6b71-403f-8342-968a9748a7ed",
+                "resourcePath": "sprites\\sprInvisibleWall2\\sprInvisibleWall2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
