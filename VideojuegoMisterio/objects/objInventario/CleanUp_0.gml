@@ -1,0 +1,2 @@
+ds_grid_destroy(ds_jugador_informacion);
+ds_grid_destroy(ds_inventario);

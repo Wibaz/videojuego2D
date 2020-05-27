@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "28ac9004-dfc2-4dfe-9fef-c242269da019",
+            "Value": {
+                "id": "fb30ce68-d80c-4491-9bbf-8f012dc9a9c0",
+                "resourcePath": "objects\\objItem\\objItem.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2a7bb9e7-fe55-42e2-93ad-5be5ba17f645",
             "Value": {
                 "id": "196ce457-55e1-4a17-a308-82371f87a5a5",
@@ -311,6 +319,14 @@
             }
         },
         {
+            "Key": "41cc2326-d61c-4001-83b9-535331ffe6ff",
+            "Value": {
+                "id": "7239c597-f82b-4d10-88f7-e4fb2a0367dc",
+                "resourcePath": "sprites\\borrarTesteoInventarioItems\\borrarTesteoInventarioItems.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "499c99a8-3508-495f-bb94-2c64eda5061a",
             "Value": {
                 "id": "83a2a167-4ffe-44d6-936d-2b8436c45c8e",
@@ -379,6 +395,22 @@
             "Value": {
                 "id": "c2900751-14b7-4b40-993a-e9282e3d63e2",
                 "resourcePath": "sprites\\sprIbukiGeneral\\sprIbukiGeneral.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5587072c-15b9-4613-a8eb-b05b468e0d94",
+            "Value": {
+                "id": "2c98cff5-f1ef-4f2c-a56d-102a4602e40a",
+                "resourcePath": "fonts\\fntInventario24\\fntInventario24.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "5f6bb9fa-c73c-45dc-b008-4b5e90aaf1c0",
+            "Value": {
+                "id": "822b5a09-6121-45f5-96c0-8c9809de29f0",
+                "resourcePath": "sprites\\borrarTesteoInventarioUI\\borrarTesteoInventarioUI.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -519,6 +551,14 @@
             }
         },
         {
+            "Key": "88bfda87-087f-4ccf-9242-447ac2e01bea",
+            "Value": {
+                "id": "a141e2fc-ac1e-46d1-a922-901dd2213f34",
+                "resourcePath": "fonts\\fntInventarioNumPequenyo\\fntInventarioNumPequenyo.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "8958e046-350d-42c9-801d-31266254e68f",
             "Value": {
                 "id": "848874ac-6394-4703-ac81-67ae5b368240",
@@ -639,6 +679,14 @@
             }
         },
         {
+            "Key": "a5ce60e7-760c-4e21-8e45-d0bf3b22e3ae",
+            "Value": {
+                "id": "ef61638b-b857-4f33-8e49-e4f8fcb0d633",
+                "resourcePath": "sprites\\borrarTesteoIventarioItemMonedas\\borrarTesteoIventarioItemMonedas.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a8121e25-e7d9-4697-9a65-cf4ddb2921e5",
             "Value": {
                 "id": "e2842de9-d5ed-42b8-b52a-471c7c39dc0b",
@@ -687,6 +735,14 @@
             }
         },
         {
+            "Key": "b178c4b5-6430-4650-84a0-3ecf0e29b925",
+            "Value": {
+                "id": "98992598-f961-4621-aa34-332538e31fa8",
+                "resourcePath": "fonts\\fntInventario12\\fntInventario12.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "b4c6e004-42f0-4322-8ab5-69465e9965ea",
             "Value": {
                 "id": "610e9f4a-eb68-459e-b079-84d810005c99",
@@ -732,6 +788,14 @@
                 "id": "724e1307-e119-487b-85cc-21c1bfdd74f8",
                 "resourcePath": "sprites\/sprMenuPointer\/sprMenuPointer.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c84418f4-f8da-403b-b07e-4d93a31f6119",
+            "Value": {
+                "id": "91273a95-06ec-42d6-b471-42b634ec28ee",
+                "resourcePath": "objects\\objInventario\\objInventario.yy",
+                "resourceType": "GMObject"
             }
         },
         {
