@@ -1,0 +1,1 @@
+draw_sprite_part(item_spr, 0, x_frame * TamanyoCelda, y_frame * TamanyoCelda, TamanyoCelda, TamanyoCelda, x-x_offset, y-y_offset);
