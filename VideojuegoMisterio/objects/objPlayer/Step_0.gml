@@ -1,3 +1,6 @@
+//Lo nuevo
+if (!objParentNPC.can_move) exit;
+
 //check if the player wants to move
 var movX = 0;
 var movY = 0;
@@ -25,9 +28,32 @@ if (objGame.state == "IN_GAME") {
 	    movY += 1;
 	}
 	if (spritePlayer!=sprite_index)
+	{
 		sprite_index=spritePlayer;
+	}
+	input_interact = keyboard_check_pressed(ord("E"));
+}
 
-
+//Textbox
+if(input_interact) {
+	
+	if (active_textbox == noone){
+		var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius, objParentNPC, false, false);
+		if (inst != noone){
+			with(inst) {
+				var tbox = create_textbox(text, speakers, next_line);
+				can_move = false;
+				movX = 0;
+				movY = 0;
+			}
+			active_textbox = tbox;
+		}
+	}
+	else {
+		if (!instance_exists(active_textbox)) {
+			active_textbox = noone;
+		}
+	}
 }
 
 //calculate the new velocities with aceleration

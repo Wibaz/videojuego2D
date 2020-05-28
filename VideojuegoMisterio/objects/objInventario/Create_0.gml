@@ -1,6 +1,6 @@
 depth = -1;
-escala = 2; // Propiedades de vista / propiedades de la cámara
-mostrarInventario = true;
+escala = 1; // Propiedades de vista / propiedades de la cámara
+mostrarInventario = false;
 
 espacioInventario = 17;
 espacioInventarioAncho = 8;
@@ -16,8 +16,12 @@ yBuffer = 4;
 
 TamanyoCelda = 32;
 
+/*
 guiAncho = display_get_gui_width();
 guiAlto = display_get_height();
+*/
+guiAncho = global.game_width;
+guiAlto = global.game_height;
 
 invUIAncho = 288;
 invUIAlto = 192;
