@@ -7,22 +7,22 @@ var movY = 0;
 var spritePlayer=sprite_index;
 
 if (objGame.state == "IN_GAME") {
-	if (keyboard_check(ord("A")))
+	if (keyboard_check(global.key_left))
 	{
 		spritePlayer=sprPlayerLeft;
 	    movX -=1;
 	}
-	if (keyboard_check(ord("D")))
+	if (keyboard_check(global.key_right))
 	{
 		spritePlayer=sprPlayerRight
 	    movX += 1;
 	}
-	if (keyboard_check(ord("W")))
+	if (keyboard_check(global.key_up))
 	{
 		spritePlayer=sprPlayerUp
 	    movY -= 1;
 	}
-	if (keyboard_check(ord("S")))
+	if (keyboard_check(global.key_down))
 	{
 		spritePlayer=sprPlayerDown
 	    movY += 1;
@@ -31,7 +31,7 @@ if (objGame.state == "IN_GAME") {
 	{
 		sprite_index=spritePlayer;
 	}
-	input_interact = keyboard_check_pressed(ord("E"));
+	input_interact = keyboard_check_pressed(global.key_interact);
 }
 
 //Textbox
