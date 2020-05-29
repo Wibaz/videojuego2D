@@ -1,3 +1,4 @@
+/*
 //Draw the selector and change the option picture
 // draw the indicator of what option we have currently selected
 var selectorMiddleWidth = sprite_get_width(sprMenuPointer)/2;
@@ -21,3 +22,4 @@ if(selectedOption == 0){
 }
 
 draw_sprite(sprMenuPointer, 0, triX, triY);
+*/
