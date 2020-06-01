@@ -1087,6 +1087,14 @@
             }
         },
         {
+            "Key": "f4fe74b7-a9e4-4249-9d12-35f7d0d756fe",
+            "Value": {
+                "id": "a91da0df-ef81-4236-a9f6-9b631214a895",
+                "resourcePath": "sprites\\spr_portraitsEzra\\spr_portraitsEzra.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f6af4edd-82cf-4e92-a829-244a8adcf391",
             "Value": {
                 "id": "e826ac99-8e8d-473d-8626-03ddd0a540c0",
