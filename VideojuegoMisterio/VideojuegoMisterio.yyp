@@ -911,6 +911,14 @@
             }
         },
         {
+            "Key": "bfb8c4d5-7d99-4bce-887f-19328af6b96a",
+            "Value": {
+                "id": "42cc03fd-55f1-4793-9796-dd305029c0cd",
+                "resourcePath": "sprites\\spr_portraitsLaria\\spr_portraitsLaria.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c245e1fc-c151-495d-8749-11c018b044de",
             "Value": {
                 "id": "752489b9-709e-4f4b-b93b-9bb982f9b480",
