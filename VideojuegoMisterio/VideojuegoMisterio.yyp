@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "09c28a13-f162-4841-b05b-bde50a8e83bc",
+            "Value": {
+                "id": "d04c28c2-6b65-4bd2-9cbc-25d48d4a711b",
+                "resourcePath": "sprites\\spr_portraitsIbuki\\spr_portraitsIbuki.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0aaf9331-5295-4178-9958-881e8d738ab3",
             "Value": {
                 "id": "4ea9b0bf-60ff-4122-a5f2-3e4297754231",
@@ -1044,6 +1052,14 @@
                 "id": "5c64f2e5-15f8-4c87-835c-68ef57fea6c2",
                 "resourcePath": "views\/dcf6ab9f-1661-4009-9125-fdbd9c636a99.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dee006b1-3c0a-4084-8e50-513934e3dc99",
+            "Value": {
+                "id": "31426d44-b0af-4d20-9008-60f6422191cf",
+                "resourcePath": "sprites\\spr_portraitsNathan\\spr_portraitsNathan.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
