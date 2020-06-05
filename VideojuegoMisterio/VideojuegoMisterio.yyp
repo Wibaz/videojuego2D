@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "1d3426d8-af6e-4784-bc43-0c41a607c0ea",
+            "Value": {
+                "id": "c9c8d55e-9d78-415f-b3d5-d344508a1455",
+                "resourcePath": "rooms\\Cubierta\\Cubierta.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1e1248e0-64ac-4c6e-92f2-d194582dd517",
             "Value": {
                 "id": "db8c7448-9976-4c15-bb9d-e6aac146074a",
@@ -871,6 +879,14 @@
             }
         },
         {
+            "Key": "afc2e18c-21ef-42f9-98a3-231a9d6f4695",
+            "Value": {
+                "id": "cf41c2d1-150d-43fb-a6f7-e0a42b6afed5",
+                "resourcePath": "rooms\\Pasillo\\Pasillo.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "b178c4b5-6430-4650-84a0-3ecf0e29b925",
             "Value": {
                 "id": "98992598-f961-4621-aa34-332538e31fa8",
@@ -900,6 +916,22 @@
                 "id": "95583076-6257-415c-a9fa-8d94bdb8869a",
                 "resourcePath": "sprites\\sprCharlesRight\\sprCharlesRight.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bbbde129-9d71-4812-95af-8a695083fc16",
+            "Value": {
+                "id": "c11397d1-8aa4-4bde-8e43-47ce780ba8f9",
+                "resourcePath": "rooms\\camaroteImportante\\camaroteImportante.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "bd54d24c-e145-487b-b131-c891218b55ce",
+            "Value": {
+                "id": "745d75f0-7522-4706-b654-631da3576881",
+                "resourcePath": "rooms\\camarote\\camarote.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
