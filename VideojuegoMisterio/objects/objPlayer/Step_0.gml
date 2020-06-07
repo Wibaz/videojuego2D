@@ -1,6 +1,3 @@
-//Lo nuevo
-if (!objParentNPC.can_move) exit;
-
 //check if the player wants to move
 var movX = 0;
 var movY = 0;
@@ -70,16 +67,10 @@ vspeed+=offsetSpeedY;
 
 
 //computer
-if (place_meeting(x,y,objGoToComputer)) {
-	if (keyboard_check(vk_space)) {
-		global.PX = objPlayer.x;
-		global.PY = objPlayer.y;
-		objPlayer.x = 10000;
-		objPlayer.y = 10000;
-		room_goto(Computer);
-	}
+if (place_meeting(x,y,objGoToComputer) && keyboard_check(ord("E")))
+{
+	//hacer que desaparezca el jugador al ir a la room del servidor
+	other.visible = false;
+	
+	room_goto(ErrorScreen);
 }
-
-
-
-
