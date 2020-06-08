@@ -5,6 +5,16 @@
     "name": "objTP",
     "eventList": [
         {
+            "id": "0d0cb119-5ed7-468c-b33e-2c39c8b11969",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "836dccb8-febc-4b7a-a291-87b83de9f01e"
+        },
+        {
             "id": "72e7c8a6-33e8-4303-afcb-a5a7760af2d3",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -31,50 +41,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "7b2a4840-b4c2-4e55-8f3e-ff5eb92f75aa",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "targetRoom",
-            "varType": 5
-        },
-        {
-            "id": "6b983c4a-40b9-413a-8272-9db07cf75979",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "targetX",
-            "varType": 0
-        },
-        {
-            "id": "0c5dd624-c275-4d02-a2ba-5e65918ecef0",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "targetY",
-            "varType": 0
-        }
-    ],
+    "properties": null,
     "solid": false,
     "spriteId": "1d06ec3f-8a8c-4960-bc78-440aff519c91",
     "visible": true
