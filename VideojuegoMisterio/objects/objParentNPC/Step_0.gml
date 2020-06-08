@@ -14,3 +14,4 @@ else {
 		myTextBox = noone;
 	}
 }
+image_speed=0;

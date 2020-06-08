@@ -74,7 +74,7 @@ if (place_meeting(x,y,objGoToComputer) && keyboard_check(ord("E")))
 	
 	room_goto(ErrorScreen);
 }
-if (place_meeting(x,y,objPuzzle1) && keyboard_check(ord("E")) && !global.Key)
+if (place_meeting(x,y,objPuzzle1) && input_interact && !global.Key)
 {
 	//hacer que desaparezca el jugador al ir a la room delpuzzle
 	other.visible = false;

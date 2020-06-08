@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "objCamaroteIPasillo",
     "eventList": [
-        
+        {
+            "id": "245fb661-7d04-4977-9763-3fd6d474e6ab",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "564b69eb-c80e-49b3-9443-e6abd8a3625e"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [

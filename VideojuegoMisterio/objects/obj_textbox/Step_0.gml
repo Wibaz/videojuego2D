@@ -34,3 +34,5 @@ if (choice_dialogue) {
 		choice = text_array_len - 1;
 	}
 }
+if(name == "Ibuki")
+	global.IbukiParla=true;
