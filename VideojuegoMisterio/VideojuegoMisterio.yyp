@@ -815,14 +815,6 @@
             }
         },
         {
-            "Key": "98070061-df01-40bb-b634-36913a81c563",
-            "Value": {
-                "id": "f5a088b4-1749-4f32-97e1-fb45d6ecb2d2",
-                "resourcePath": "sprites\\sprLampara\\sprLampara.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "99533c81-009e-48b8-aa7a-cae1feb2ed3b",
             "Value": {
                 "id": "adbc814e-fc3b-40e5-bb65-5e540b5a0db3",
