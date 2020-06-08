@@ -20,13 +20,13 @@ voice = snd_voice3;
 name = "Nathan";
 if(!global.Key)
 {
-	text = ["No se preocupe por el cadaver, yo me encargo.","Busque a Ibuki.","Entiendo.", "Deberia estar un su cuarto. Vayase.","(Que cortante es.)"];
-	speakers = [id,id,objPlayer,id,objPlayer];
-	next_line=[0,0,0,0,-1];
+	text = ["No se preocupe por el cadáver, yo me encargo.", "¿Usted es...?","Nathan, si buscas un nombre toma ese. Sé como son los de su tipo. Qué coincidencia que se encuentre aquí, ¿no le parece?","Ehhh...","Busque a la mujer que salió corriendo.","Entiendo.", "Debería estar en uno de los camarotes. Váyase.","(¿Este hombre sabe quién soy yo?)"];
+	speakers = [id,objPlayer,id,objPlayer,id,objPlayer,id,objPlayer];
+	next_line=[0,0,0,0,0,0,0,-1];
 }
 else if (global.Key)
 {
-	text = ["¿Ya ha hablado con Ibuki?.",["Si parece que ya se encuentra mejor.","No, la verdad."], "Ya veo, ahora si me disculpa voy a seguir investigando.","Pues debería."];
+	text = ["¿Ya ha hablado con con la mujer?",["Sí, parece que ya se encuentra mejor.","No, la verdad."], "Ya veo, espero que haya esclarecido algo, o sino será un patán en su propio oficio.","Pues debería, ahora mismo es la principal sospechosa ¿no?"];
 	speakers = [id,objPlayer,id,id];
 	next_line=[0,[2,3],-1,-1];
 }

@@ -2,7 +2,7 @@ depth = 1;
 
 portrait_index = 1;
 voice = snd_voice2;
-name = "Player";
+name = "Reed";
 
 radius = 16;
 active_textbox = noone;

@@ -4,21 +4,12 @@
 // Inherit the parent event
 event_inherited();
 
-myTextBox = noone;
-myName = "Ezra";
-
-myText[0] = "Hey, my name is Erza";
-myText[1] = "You were given the powers of the dead.";
-myText[2] = "But even that is only temporary.";
-myText[3] = "When the sun rises in the morning...";
-myText[4] = "I'm afraid you're going to cease to exit.";
-myText[5] = "jejejeje jejejeje jejejejejejejjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj";
 
 //Nuevo
 portrait_index = 3;
 voice = snd_voice2;
 name = "Ibuki";
-text = ["(Parece afectada, si quiero hablar con ella primero tendria que calmarla.)","¿Se encuentra bien?.","Entiendo que puede ser dificil, pero intente calmarse y centrarse.", "El asesino puede que busque mas victimas, debe intentar mantenerse por si misma.","Supongo que tiene razon, pero no puedo","Si tiene algun problema comuniquelo e intentare ir.","Gracias... Imagino que deberia salir del cuarto. Estare en la cocina si necesita algo."];
+text = ["(Parece afectada, si quiero hablar con ella primero tendría que calmarla.)","¿Se encuentra bien?","Entiendo que puede ser difícil, pero piense que la policía llegará cuanto antes y esto habrá acabado.", "El asesino puede seguir aquí, intente mantanerse cerca de los demas en vez de aislarse.","Supongo que tiene razón, pero no puedo","Si descubre algo dígamelo e intentare ir.","Gracias... Imagino que debería salir del cuarto. Estaré en la cocina entonces."];
 speakers = [objPlayer,objPlayer,objPlayer,objPlayer,id,objPlayer,id];
 next_line=[0,0,0,0,0,0,-1];
 
