@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "151ce5b1-ab0a-4433-af5e-9fb26273fed7",
+            "Value": {
+                "id": "5f08006c-737e-426b-b38a-2284be10a925",
+                "resourcePath": "sprites\\sprTarta\\sprTarta.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "15cd63a2-fcfd-40ed-b699-78788c3f7e38",
             "Value": {
                 "id": "c0f1666d-5328-44b1-8024-2b90146af183",
@@ -543,6 +551,14 @@
             }
         },
         {
+            "Key": "62cb7e3d-5083-43e9-a206-8797216b937d",
+            "Value": {
+                "id": "84ad0320-0cd8-4964-9697-87dbf71580e3",
+                "resourcePath": "sprites\\sprDetectarColision\\sprDetectarColision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6378d3a4-dcf1-48a0-ab58-8a26bb9cfb35",
             "Value": {
                 "id": "627548b1-6b08-46a4-b702-722a916b01c0",
@@ -591,6 +607,14 @@
             }
         },
         {
+            "Key": "6d173526-7f1e-4857-a7da-5876ab143203",
+            "Value": {
+                "id": "99fa5317-1e29-4681-a05e-52e7749cde81",
+                "resourcePath": "objects\\objDetectarColision\\objDetectarColision.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6de538e6-6e16-4751-813f-8a5f67b4b8d0",
             "Value": {
                 "id": "e7e2bd2b-98e6-4474-8d5d-4092da420968",
@@ -635,6 +659,14 @@
             "Value": {
                 "id": "a060114c-df82-4835-9b10-98fe8405196c",
                 "resourcePath": "sprites\/sprEzraGeneral\/sprEzraGeneral.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7c6a1097-db9b-443d-8c97-d2cde89d53af",
+            "Value": {
+                "id": "43311e2f-4810-434d-930f-85f4648c7bb7",
+                "resourcePath": "sprites\\sprLightHight\\sprLightHight.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -727,6 +759,14 @@
             }
         },
         {
+            "Key": "8d2f20e4-af41-4ea9-afc3-fa12925863bd",
+            "Value": {
+                "id": "4f128539-fff0-4fd6-97c8-d05307d187af",
+                "resourcePath": "objects\\objTarta\\objTarta.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "90c28adc-a47c-4072-b52e-26853043caec",
             "Value": {
                 "id": "e48e931a-5113-4c89-9fd6-820d08b9bf2f",
@@ -771,6 +811,14 @@
             "Value": {
                 "id": "3d6c1f37-8835-4e32-b96b-9a8bcde55e38",
                 "resourcePath": "sprites\/sprite19\/sprite19.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "98070061-df01-40bb-b634-36913a81c563",
+            "Value": {
+                "id": "8f558f23-1874-4cf1-96ba-bc2164900084",
+                "resourcePath": "sprites\\sprLampara\\sprLampara.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -895,6 +943,14 @@
             }
         },
         {
+            "Key": "add23b59-6e79-4b57-a9df-20637a15f642",
+            "Value": {
+                "id": "314f4543-22ad-4d19-8484-5804ac9049c4",
+                "resourcePath": "sprites\\sprTartaTerminada\\sprTartaTerminada.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ae927241-2251-4021-b040-f508e92b97f5",
             "Value": {
                 "id": "d9857217-931d-4fb0-9891-93ed18853113",
@@ -947,6 +1003,14 @@
             "Value": {
                 "id": "95583076-6257-415c-a9fa-8d94bdb8869a",
                 "resourcePath": "sprites\/sprCharlesRight\/sprCharlesRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b9981672-83a6-4c9b-979b-1238579c18fd",
+            "Value": {
+                "id": "303a1643-9b19-4e7e-ae72-18fa5188886b",
+                "resourcePath": "sprites\\sprLamparaIzquierda\\sprLamparaIzquierda.yy",
                 "resourceType": "GMSprite"
             }
         },
