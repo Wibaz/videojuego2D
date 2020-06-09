@@ -6,3 +6,5 @@ name = "Player";
 
 radius = 16;
 active_textbox = noone;
+
+playerMove = true;

@@ -6,6 +6,8 @@ var movX = 0;
 var movY = 0;
 var spritePlayer=sprite_index;
 
+if (playerMove == false) exit;
+
 if (objGame.state == "IN_GAME") {
 	if (keyboard_check(global.key_left))
 	{
