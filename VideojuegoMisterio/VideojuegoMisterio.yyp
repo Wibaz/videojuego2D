@@ -575,6 +575,14 @@
             }
         },
         {
+            "Key": "4b1286a1-83b5-41a4-a75f-cf0019875590",
+            "Value": {
+                "id": "8132c9ee-446d-4684-bf70-c64521dd2c3d",
+                "resourcePath": "sprites\\sprInvisibleWall3\\sprInvisibleWall3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4b5eea80-6825-4bb6-9ede-4dfdb485be58",
             "Value": {
                 "id": "ef64cc43-4f0d-4967-97d8-eb0636b1a689",
@@ -828,6 +836,14 @@
                 "id": "f527b789-d220-443c-b5ce-c76986b97fff",
                 "resourcePath": "scripts\/change_window_mode\/change_window_mode.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "74b868f7-8281-4346-ae23-245518f9721a",
+            "Value": {
+                "id": "02f5f0ef-9f91-4b48-bcdb-daa2cc152dad",
+                "resourcePath": "objects\\objCajon\\objCajon.yy",
+                "resourceType": "GMObject"
             }
         },
         {
