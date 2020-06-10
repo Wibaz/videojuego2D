@@ -1,28 +1,18 @@
 {
-    "id": "bd81cd49-6dbe-4ad3-8d45-ea375113d7ff",
+    "id": "ed9a1e11-15c9-45fc-9465-95aa9ed9d4a7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objError",
+    "name": "objPlacaBase",
     "eventList": [
         {
-            "id": "9e55fb6e-32c3-4b05-8e9a-53c4afc4f94b",
+            "id": "33fa35fe-cabf-40f8-ac25-13e6bc2e02c5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "collisionObjectId": "e28d5f51-88c0-4658-9e75-5f2fc70f5322",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "bd81cd49-6dbe-4ad3-8d45-ea375113d7ff"
-        },
-        {
-            "id": "8d753c1e-d543-4387-8689-596cb9841111",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "bd81cd49-6dbe-4ad3-8d45-ea375113d7ff"
+            "eventtype": 4,
+            "m_owner": "ed9a1e11-15c9-45fc-9465-95aa9ed9d4a7"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "46cfb565-9196-4cd0-a0fe-02f54943670e",
+            "id": "bfe05887-a2b0-4662-9331-07dc0d6861e1",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -53,11 +43,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "orgX",
-            "varType": 0
+            "varName": "Colocado1",
+            "varType": 3
         },
         {
-            "id": "865c8dbd-322d-442a-958e-822bbb4f4c3a",
+            "id": "47ee4494-1311-463e-b512-8eee0c027796",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -67,11 +57,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "orgY",
-            "varType": 0
+            "varName": "move1",
+            "varType": 3
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "ed3b816d-3a83-45d1-9f7e-ca36dc4e4c20",
     "visible": true
 }

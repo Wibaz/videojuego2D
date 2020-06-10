@@ -1,18 +1,28 @@
 {
-    "id": "68e49861-1e3c-4a02-a4cc-2b9daeb699c6",
+    "id": "bd81cd49-6dbe-4ad3-8d45-ea375113d7ff",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objPower",
+    "name": "objErrorManager",
     "eventList": [
         {
-            "id": "2094abb4-e166-497f-b0ac-dbdeb73ed845",
+            "id": "9e55fb6e-32c3-4b05-8e9a-53c4afc4f94b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "e28d5f51-88c0-4658-9e75-5f2fc70f5322",
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "68e49861-1e3c-4a02-a4cc-2b9daeb699c6"
+            "eventtype": 3,
+            "m_owner": "bd81cd49-6dbe-4ad3-8d45-ea375113d7ff"
+        },
+        {
+            "id": "8d753c1e-d543-4387-8689-596cb9841111",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "bd81cd49-6dbe-4ad3-8d45-ea375113d7ff"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,7 +43,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "680c1717-c6eb-4ebd-98f5-ad46150ec881",
+            "id": "46cfb565-9196-4cd0-a0fe-02f54943670e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -43,11 +53,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "move",
-            "varType": 3
+            "varName": "orgX",
+            "varType": 0
         },
         {
-            "id": "18137a74-b36a-4372-99d5-744140729a64",
+            "id": "865c8dbd-322d-442a-958e-822bbb4f4c3a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -57,11 +67,25 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "Colocado",
+            "varName": "orgY",
+            "varType": 0
+        },
+        {
+            "id": "27e8c4d4-0037-4677-ae04-7282580e2f98",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "serverOk",
             "varType": 3
         }
     ],
     "solid": false,
-    "spriteId": "856a181c-c1da-4817-8aa8-3a375c3a95a4",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

@@ -1,18 +1,18 @@
 {
-    "id": "68e49861-1e3c-4a02-a4cc-2b9daeb699c6",
+    "id": "502dbc18-f477-41c8-af20-465454f4b60b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objPower",
+    "name": "objHardDisk",
     "eventList": [
         {
-            "id": "2094abb4-e166-497f-b0ac-dbdeb73ed845",
+            "id": "14e0d114-ef2b-478b-abc5-992eaf16e472",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "e28d5f51-88c0-4658-9e75-5f2fc70f5322",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "68e49861-1e3c-4a02-a4cc-2b9daeb699c6"
+            "m_owner": "502dbc18-f477-41c8-af20-465454f4b60b"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,21 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "680c1717-c6eb-4ebd-98f5-ad46150ec881",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "move",
-            "varType": 3
-        },
-        {
-            "id": "18137a74-b36a-4372-99d5-744140729a64",
+            "id": "ac639813-2a1d-4270-8860-d877684ec2c6",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -59,9 +45,23 @@
             "value": "0",
             "varName": "Colocado",
             "varType": 3
+        },
+        {
+            "id": "30492909-9d3b-4894-a22a-f8bf41b4278f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "move",
+            "varType": 3
         }
     ],
     "solid": false,
-    "spriteId": "856a181c-c1da-4817-8aa8-3a375c3a95a4",
+    "spriteId": "535a9cdb-6948-40da-9082-99e698748681",
     "visible": true
 }

@@ -11,7 +11,9 @@
         "eb92c073-b89a-4018-9147-53701da77ac6",
         "f3ed9ebc-d650-4635-b9af-6bb413948b71",
         "3de013b5-fb82-4789-9e4b-2d011862e4d7",
-        "856a181c-c1da-4817-8aa8-3a375c3a95a4"
+        "856a181c-c1da-4817-8aa8-3a375c3a95a4",
+        "535a9cdb-6948-40da-9082-99e698748681",
+        "ed3b816d-3a83-45d1-9f7e-ca36dc4e4c20"
     ],
     "filterType": "GMSprite",
     "folderName": "Computer",
