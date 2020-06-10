@@ -45,6 +45,20 @@
             "value": "0",
             "varName": "move",
             "varType": 3
+        },
+        {
+            "id": "8b48c7d9-ff48-44f7-be05-a4ed6d1efec6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "Colocado",
+            "varType": 3
         }
     ],
     "solid": false,
