@@ -11,15 +11,7 @@ myName = "Laria";
 portrait_index = 1;
 voice = snd_voice2;
 name = "Reed";
-//global.IbukiParla = true;
-if(global.IbukiParla = true){
-global.FuenteDeAlimentacion = true;
-text = ["¡Has conseguido la fuente de alimentacion!"];
+text= ["(Se nota que el cocinero tiene experiencia. El plato tiene un pinta increible)"];
 speakers = [id];
 next_line=[-1]
-}
-else{
-text = ["(Es un cajon, parece contener baterias y pilas.)"]
-speakers = [id];
-next_line=[-1]
-}
+

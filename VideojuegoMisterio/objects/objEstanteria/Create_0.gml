@@ -13,13 +13,13 @@ voice = snd_voice2;
 name = "Reed";
 //global.IbukiParla = true;
 if(global.IbukiParla = true){
-global.FuenteDeAlimentacion = true;
-text = ["¡Has conseguido la fuente de alimentacion!"];
-speakers = [id];
-next_line=[-1]
+	global.FuenteDeAlimentacion = false;
+text = ["¡Has conseguido un Disco Duro!.","(Ya no saben ni donde poner las cosas.)"];
+speakers = [id,id];
+next_line=[0,-1]
 }
-else{
-text = ["(Es un cajon, parece contener baterias y pilas.)"]
+else {
+text= ["(Es una estanteria con luces.)"];
 speakers = [id];
 next_line=[-1]
 }
