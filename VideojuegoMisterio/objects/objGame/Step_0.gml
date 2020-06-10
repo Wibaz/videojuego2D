@@ -54,7 +54,8 @@ switch(global.scene){
 		with(objManoDerecha){
 			if(x < (objPlayer.x + 32)){
 				hspeed = 0;
-				text = ["Señor Reed, es mejor que pase adentro o va a echar a perder su traje. Los demás invitados ya están en la sala principal y mi señor no tardara nada en llegar. Quiere hablar con usted antes de nada.","(Mmm... Está bien, esperaré allí. Más vale que esto no sea una pérdida de tiempo, no estoy aquí para bromas o fiestas.)"];
+				text = ["Señor Reed, es mejor que pase adentro o va a echar a perder su traje. Los demás invitados ya están en la sala principal y mi señor no tardara nada en llegar. Quiere hablar con usted antes de nada.",
+						"(Mmm... Está bien, esperaré allí. Más vale que esto no sea una pérdida de tiempo, no estoy aquí para bromas o fiestas.)"];
 				speakers = [id,objPlayer];
 				next_line=[0,-1];
 				activate_textbox = create_textbox(text, speakers, next_line);
@@ -155,7 +156,7 @@ switch(global.scene){
 	case 16:
 		if (room == Salon){
 			instance_create_depth(816, 592, 1, objEzra);
-			instance_create_depth(656, 448, 1, objIbukiCamarote);
+			instance_create_depth(656, 448, 1, objLaria);
 			objEzra.image_index = 1;
 			with(objPlayer){
 				hspeed = 0;
@@ -306,7 +307,45 @@ switch(global.scene){
 		}
 		break;
 	case 31:
-		/*He yo del futuro, Ibuki es tan fácil como detectarel eje x a lo pokemons, acuerdate cambiar el sprite de la tarta de Ibuki.
-		P.D.: Buena suerte en el examen, espero que te vaya bien*/
+		if (objPlayer.x <= objLaria.x + 32){
+			objPlayer.playerMove = false;
+			objPlayer.x = objLaria.x + 32;
+			objLaria.vspeed = +4;
+			global.scene++;
+		}
+		break;
+	case 32:
+		if (objTarta.y - 32 <= objLaria.y){
+			with(objLaria){
+				vspeed = 0;
+				image_index = 1;
+			}
+			objTarta.sprite_index = sprTartaTerminada;
+			global.scene++;
+		}
+		break;
+	case 33:
+		with(objLaria){
+			image_index = 3;
+			text = ["Lo siento tío, pero ahí has estado muy lento. Ops, espera, ¿tu quien porras eres?",
+			"¡Pero, cómo! ¡¿Niña tú que haces aquí?!",
+			"Uy lo siento, pensaba que era otra persona, mira tú. Pues me he comido ya el trozo de tarta, otra vez será.  Es que hay que aprovechar toda la comida sabe. En este mundo muere mucha gente de hambre y esas cosas. ¡Qué rica estaba! Por cierto, me llamo Laria, que se me olvida presentarme.",
+			"Soy Reed. Deberías tratar con más respeto a la gente... Espera ¿no eres muy joven para estar en una fiesta privada en un yate de un empresario de noche?",
+			"¡Hala, no me sea abuelo! Tengo 19 años, voy a la Academia de Artes, dentro de nada tendré que pagar impuestos. Oiga ¿y usted a que se dedica? Por su aspecto diría... ¡Abogado de mala muerte! ¿He acertado? ¡Diga que sí!",
+			"No te voy a decir nada, me has robado la tarta.",
+			"Espera ¡¿que?! Eso no es justo ¡Oigaaaa!"];
+			speakers = [id, objPlayer, id, objPlayer, id, objPlayer, id];
+			next_line=[0, -1];
+			activate_textbox = create_textbox(text, speakers, next_line);
+		}
+		global.scene++;
+		break;
+	case 34:
+		with(objLaria){
+			if (!instance_exists(activate_textbox)) {
+				objPlayer. playerMove = true;
+				global.scene++;
+			}
+		}
 		break;
 }
