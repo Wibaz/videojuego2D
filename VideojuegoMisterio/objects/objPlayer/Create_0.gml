@@ -12,3 +12,4 @@ global.Puzzle2Completado=true;
 global.IbukiParla=false;
 global.DestruirIbuki=false;
 global.DestruirOtrosNPC=true;
+global.FuenteDeAlimentacion=false;
