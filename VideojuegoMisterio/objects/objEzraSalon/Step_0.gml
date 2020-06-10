@@ -5,6 +5,6 @@
 event_inherited();
 image_index=0;
 
-if(!global.Puzzle2Completado)
+if(!global.DestruirOtrosNPC)
 	instance_destroy();
 

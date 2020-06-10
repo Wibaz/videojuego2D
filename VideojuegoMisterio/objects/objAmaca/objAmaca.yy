@@ -1,18 +1,18 @@
 {
-    "id": "74b868f7-8281-4346-ae23-245518f9721a",
+    "id": "8ebd43a0-de21-4cc0-9924-169894e14596",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objCajon",
+    "name": "objAmaca",
     "eventList": [
         {
-            "id": "c3611622-93ab-41f9-a044-3be6b19426fc",
+            "id": "26fcfc84-73f5-414b-b70e-28365b708279",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "74b868f7-8281-4346-ae23-245518f9721a"
+            "m_owner": "8ebd43a0-de21-4cc0-9924-169894e14596"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -31,7 +31,9 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        
+    ],
     "solid": false,
     "spriteId": "4b1286a1-83b5-41a4-a75f-cf0019875590",
     "visible": false
