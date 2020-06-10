@@ -24,9 +24,15 @@ if(!global.Key)
 	speakers = [id,objPlayer,id,objPlayer,id,objPlayer,id,objPlayer];
 	next_line=[0,0,0,0,0,0,0,-1];
 }
-else if (global.Key)
+else if (global.Key && !global.Puzzle2Completado)
 {
 	text = ["¿Ya ha hablado con con la mujer?",["Sí, parece que ya se encuentra mejor.","No, la verdad."], "Ya veo, espero que haya esclarecido algo, o sino será un patán en su propio oficio.","Pues debería, ahora mismo es la principal sospechosa ¿no?"];
 	speakers = [id,objPlayer,id,id];
 	next_line=[0,[2,3],-1,-1];
+}
+else if(global.Puzzle2Completado)
+{
+	text = ["¿Algún problema agente?","Ninguno nuevo.", "Espero que sepa manejar lo que tiene entre manos o estaremos todos condenados.","(Este tio tiene que leerme la mente o algo)","Eso esperemos..."];
+	speakers = [id,objPlayer,id,objPlayer,objPlayer];
+	next_line=[0,0,0,0,-1];
 }

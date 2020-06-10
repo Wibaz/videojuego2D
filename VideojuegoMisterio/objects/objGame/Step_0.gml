@@ -22,7 +22,7 @@ switch (state) {
 		break;
 	}
 }
-
+/*
 switch(global.scene){
 	case 0:
 		objPlayer.sprite_index = sprPlayerLeft;

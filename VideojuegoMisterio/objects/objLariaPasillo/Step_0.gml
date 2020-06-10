@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-image_index=3;
+image_index=0;
 
-if(global.DestruirOtrosNPC)
+if(!global.Puzzle2Completado)
 	instance_destroy();

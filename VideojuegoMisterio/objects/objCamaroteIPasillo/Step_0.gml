@@ -6,6 +6,8 @@ if (place_meeting(x, y, objPlayer)) {
 	else {
 		if(global.IbukiParla)
 			global.DestruirIbuki=true;
+		if(!global.Puzzle2Completado)
+			global.DestruirOtrosNPC=true;
 		room_goto (targetRoom);
 		objPlayer.x = targetX;
 		objPlayer.y = targetY;		
