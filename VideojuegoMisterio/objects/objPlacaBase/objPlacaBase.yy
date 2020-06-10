@@ -1,28 +1,18 @@
 {
-    "id": "bd81cd49-6dbe-4ad3-8d45-ea375113d7ff",
+    "id": "df3f12ce-2102-48aa-bb08-25e8fbabebef",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objError",
+    "name": "objPlacaBase",
     "eventList": [
         {
-            "id": "9e55fb6e-32c3-4b05-8e9a-53c4afc4f94b",
+            "id": "10563abe-f183-4b58-b8b8-e877ceed9d03",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "collisionObjectId": "e28d5f51-88c0-4658-9e75-5f2fc70f5322",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "bd81cd49-6dbe-4ad3-8d45-ea375113d7ff"
-        },
-        {
-            "id": "8d753c1e-d543-4387-8689-596cb9841111",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "bd81cd49-6dbe-4ad3-8d45-ea375113d7ff"
+            "eventtype": 4,
+            "m_owner": "df3f12ce-2102-48aa-bb08-25e8fbabebef"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "46cfb565-9196-4cd0-a0fe-02f54943670e",
+            "id": "de31aea0-098e-4bdb-86c2-8960f662b8f8",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -53,11 +43,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "orgX",
-            "varType": 0
+            "varName": "move",
+            "varType": 3
         },
         {
-            "id": "865c8dbd-322d-442a-958e-822bbb4f4c3a",
+            "id": "767a154e-c13a-4e77-bb6e-9df901e2fa97",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -67,11 +57,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "orgY",
-            "varType": 0
+            "varName": "Colocado",
+            "varType": 3
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "66ea65be-c162-4791-95ad-ca9c4bf73811",
     "visible": true
 }
