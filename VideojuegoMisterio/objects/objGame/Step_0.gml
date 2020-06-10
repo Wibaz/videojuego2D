@@ -325,6 +325,12 @@ switch(global.scene){
 		}
 		break;
 	case 33:
+		if(objPlayer.y != objLaria.y){
+			if(
+		}
+		global.scene++;
+		break;
+	case 33:
 		with(objLaria){
 			image_index = 3;
 			text = ["Lo siento tío, pero ahí has estado muy lento. Ops, espera, ¿tu quien porras eres?",
