@@ -9,24 +9,28 @@ if (objGame.state == "IN_GAME") {
 	if (keyboard_check(global.key_left))
 	{
 		spritePlayer=sprPlayerLeft;
+		image_angle = 0;
 		sprite_index=spritePlayer;
 	    movX -=1;
 	}
 	else if (keyboard_check(global.key_right))
 	{
 		spritePlayer=sprPlayerRight;
+		image_angle = 0;
 		sprite_index=spritePlayer;
 	    movX += 1;
 	}
 	else if (keyboard_check(global.key_up))
 	{
 		spritePlayer=sprPlayerUp;
+		image_angle = 0;
 		sprite_index=spritePlayer;
 	    movY -= 1;
 	}
 	else if (keyboard_check(global.key_down))
 	{
 		spritePlayer=sprPlayerDown;
+		image_angle = 0;
 		sprite_index=spritePlayer;
 	    movY += 1;
 	}
@@ -39,19 +43,23 @@ if (objGame.state == "IN_GAME") {
 	{
 		if(spritePlayer == sprPlayerDown)
 		{
-			sprite_index = sprPlayerIddleDown;
+			image_angle = 0;
+			sprite_index = sprPlayerIddle;
 		}
 		else if (spritePlayer == sprPlayerUp)
 		{
-			sprite_index = sprPlayerIddleUp;
+			image_angle = 180;
+			sprite_index = sprPlayerIddle2;
 		}
 		else if (spritePlayer == sprPlayerRight)
 		{
-			sprite_index = sprPlayerIddleRight;
+			image_angle = 0;
+			sprite_index = sprPlayerIddle;
 		}
 		else if (spritePlayer == sprPlayerLeft)
 		{
-			sprite_index = sprPlayerIddleLeft;
+			image_angle = 180;
+			sprite_index = sprPlayerIddle;
 		}
 	}
 	input_interact = keyboard_check_pressed(global.key_interact);
