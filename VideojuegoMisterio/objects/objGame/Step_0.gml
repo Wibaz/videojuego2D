@@ -22,7 +22,7 @@ switch (state) {
 		break;
 	}
 }
-/*
+
 switch(global.scene){
 	case 0:
 		objPlayer.sprite_index = sprPlayerLeft;
@@ -760,5 +760,39 @@ switch(global.scene){
 				objCharles.next_line=[-1]
 			}
 		}
+		break;
+}
+
+switch(global.scene2){
+	case 0:
+		break;
+	case 1:
+		with (objPlayer){
+			{
+			playerMove = false;
+			text = ["El ordenador contiene varios archivos irrelevantes pero este me llama la atención.",
+			"Descripción de los invitados. Tiene informacion de cada uno de los invitados de esta fiesta.",
+			"Nathan Ring: Un tipo fuerte con cara de pocos amigos que para defender a su hermano de las peleas callejeras en las que se metía acabo dejando en coma a un policía.", 
+			"Por ello sufre chantaje de Zero.",
+			"Laria Deystar: Una joven y enérgica estudiante de arte con un pasado de pobreza.",
+			"Para lograr su sueño de estudiar en la prestigiosa Academia de Arte tuvo que pedir dinero a Zero y al devolverlo este le sumo unos intereses desorbitados a los que ella nunca podrá hacer frente.",
+			"Ibuki Takemi: Una profesora de literatura de universidad de origen japonés y mirada apagada.", 
+			"Durante una temporada de su vida vivió con miedo a perder su trabajo debido a los rumores de su romance con uno de sus alumnos, hasta que un día pago a Zero para que silenciase todos.",
+			"Ezra Williams: Un joven y famoso escritor de novela negra de mente retorcida.", 
+			"En el 2005 fue acusado de cometer una serie de asesinatos pero quedo impugne, en 2013 volvieron acusarle pero no consiguieron suficientes pintas.",
+			"Pareja de Ibuki. Es el mas peligroso de todos.",
+			"Wax Reed: Antiguo policia el cual fue acusado por un crimen, decidio retirarse en vez de manchar su honor como oficial.",
+			"Me servira como protección ante los invitado.",
+			"Todos tenian deudas con Charlse Zero, iamgino que los invito para resolverlas pero por desgracia le salio mal la jugada.",
+			"Seguramente alguno de ellos decidio matarlo, que mas dudas me genera es Ezra debería intentar sacarle información."];
+			speakers = [id,id,id,id,id,id,id,id,id,id,id,id,id,id,id];
+			next_line=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1];
+			activate_textbox = create_textbox(text, speakers, next_line);
+			global.scene++;
+			}
+		}
+		break;
+	case 2:
+		objPlayer.playerMove = true;
 		break;
 }

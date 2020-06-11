@@ -1,5 +1,9 @@
 if(objWhite.Texto == "a"){
-	instance_create_depth(484,171,depth,objTP);
+	objPlayer.visible=true;
+	objPlayer.x =orgX
+	objPlayer.y =orgY
+	global.scene2=1;
+	room_goto(camaroteImportante);
 }
 
 
