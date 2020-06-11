@@ -69,17 +69,18 @@ vspeed+=offsetSpeedY;
 
 
 //computer
-if (place_meeting(x,y,objGoToComputer) && keyboard_check(ord("E")))
+if (place_meeting(x,y,objGoToComputer) && input_interact)
 {
 	//hacer que desaparezca el jugador al ir a la room del servidor
 	other.visible = false;
-	
-	room_goto(ErrorScreen);
+	if (!global.serverOkay)
+		room_goto(ErrorScreen);
+	else
+		room_goto(Computer)
 }
 if (place_meeting(x,y,objPuzzle1) && input_interact && !global.Key)
 {
 	//hacer que desaparezca el jugador al ir a la room delpuzzle
-	other.visible = false;
-	
+	other.visible = false;	
 	room_goto(puzzle1);
-}
+}	

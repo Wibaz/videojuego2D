@@ -1,8 +1,11 @@
 //Miramos si esta el server arreglado
 if (objPower.Colocado && objPlacaBase.Colocado && objHardDisk.Colocado)
 {
-    objErrorManager.serverOk = true;
+    global.serverOkay = true;
+	objPlayer.visible=true;
     room_goto(camaroteImportante);
+	objPlayer.x = orgX;
+	objPlayer.y = orgY;
 }
 
 //Colocamos y checkeamos cada pieza en su sitio

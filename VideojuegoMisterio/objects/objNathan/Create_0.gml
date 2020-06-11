@@ -32,7 +32,7 @@ else if (global.Key && !global.Puzzle2Completado)
 }
 else if(global.Puzzle2Completado)
 {
-	text = ["¿Algún problema agente?","Ninguno nuevo.", "Espero que sepa manejar lo que tiene entre manos o estaremos todos condenados.","(Este tio tiene que leerme la mente o algo)","Eso esperemos..."];
+	text = ["¿Algún problema, agente?","Ninguno nuevo.", "Espero que sepa manejar lo que tiene entre manos o estaremos todos condenados.","(Este tío tiene que leerme la mente o algo)","Eso esperemos..."];
 	speakers = [id,objPlayer,id,objPlayer,objPlayer];
 	next_line=[0,0,0,0,-1];
 }

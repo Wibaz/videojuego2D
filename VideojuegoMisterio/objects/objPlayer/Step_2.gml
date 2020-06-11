@@ -34,3 +34,5 @@ if(!place_free(x,y))
     }
 
 }
+orgX = x;
+orgY = y;
