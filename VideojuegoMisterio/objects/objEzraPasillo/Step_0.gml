@@ -3,5 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
+if(!global.DestruirFinAnimacion)
+	instance_destroy();
 if(global.DestruirOtrosNPC)
 	instance_destroy();

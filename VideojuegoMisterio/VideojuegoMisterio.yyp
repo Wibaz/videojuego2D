@@ -1282,7 +1282,7 @@
             "Key": "a6f9db2a-3325-45b0-a139-661e85f8beed",
             "Value": {
                 "id": "ebff1873-14a2-4307-bd7c-a8781754c083",
-                "resourcePath": "objects\/objNathan\/objNathan.yy",
+                "resourcePath": "objects\\objNathanSalon\\objNathanSalon.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1583,6 +1583,14 @@
             }
         },
         {
+            "Key": "cc330fb6-f5af-4fac-8dba-39fd5d3034d4",
+            "Value": {
+                "id": "7b359b52-47c4-4d00-902e-fa1f470da994",
+                "resourcePath": "objects\\objCharles\\objCharles.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "d5c52985-0c54-40c8-810a-64911e7fe092",
@@ -1663,6 +1671,14 @@
             }
         },
         {
+            "Key": "d4c841b0-2bab-40d6-9068-f60c595c075a",
+            "Value": {
+                "id": "cf5c2607-544b-45ef-9d4a-4e7d8f64d7f9",
+                "resourcePath": "objects\\objNathan\\objNathan.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d610c985-b3be-4e5d-8627-93cd6d5179fe",
             "Value": {
                 "id": "66777b3c-4cea-410f-81c3-af3b92bcb35e",
@@ -1708,6 +1724,14 @@
                 "id": "17d49197-9d12-4b49-a0db-71d7f81fc317",
                 "resourcePath": "objects\/objInvisibleWall1\/objInvisibleWall1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d9704487-d4c3-4210-8fee-24e799b70e6a",
+            "Value": {
+                "id": "7f38cf28-c16d-4973-a949-ddfaa6b911d6",
+                "resourcePath": "sprites\\sprLariaGeneral1\\sprLariaGeneral1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

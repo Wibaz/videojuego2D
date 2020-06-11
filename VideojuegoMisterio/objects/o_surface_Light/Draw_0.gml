@@ -9,7 +9,7 @@ if(surface_exists(surface)){
 	
 	// Drawing
 	draw_set_color(c_black);
-	draw_set_alpha(0.6);
+	draw_set_alpha(claridad);
 	draw_rectangle(0, 0, _cw, _ch, 0);
 	
 	gpu_set_blendmode(bm_subtract);
@@ -34,7 +34,7 @@ if(!surface_exists(surface)){
 	
 	surface_set_target(surface);
 	draw_set_color(c_black);
-	draw_set_alpha(0.6);
+	draw_set_alpha(claridad);
 	draw_rectangle(0, 0, _cw, _ch, 0);
 	
 	surface_reset_target();

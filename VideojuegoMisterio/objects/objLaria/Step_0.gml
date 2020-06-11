@@ -3,8 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-image_index=3;
-if(!global.DestruirFinAnimacion)
+name="Laria"
+if(global.DestruirFinAnimacion)
 	instance_destroy();
-if(global.DestruirOtrosNPC)
-	instance_destroy();
+
