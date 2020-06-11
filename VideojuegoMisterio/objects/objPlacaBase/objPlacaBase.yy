@@ -43,7 +43,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "Colocado1",
+            "varName": "Colocado",
             "varType": 3
         },
         {
@@ -57,7 +57,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "move1",
+            "varName": "move",
             "varType": 3
         }
     ],
