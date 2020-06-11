@@ -157,10 +157,12 @@ switch(global.scene){
 		if (room == Salon){
 			instance_create_depth(816, 592, 1, objEzra);
 			objEzra.image_index = 1;
-			instance_create_depth(656, 432, 1, objLaria);
-			objLaria.image_index = 2;
+			instance_create_depth(656, objTarta.y - 32, 1, objLaria);
+			objLaria.image_index = 1;
 			instance_create_depth(752, 592, 1, objIbukiCamarote);
 			objIbukiCamarote.image_index = 2;
+			instance_create_depth(192, 592, 1, objNathan);
+			objNathan.image_index = 3;
 			with(objPlayer){
 				hspeed = 0;
 				instance_create_depth(x, y - 32, 1, objManoDerecha);
@@ -310,6 +312,439 @@ switch(global.scene){
 		}
 		break;
 	case 31:
+		if ((objPlayer.x >= objTarta.x - 16) && (objPlayer.x <= objTarta.x + 16) &&
+			(objPlayer.y >= objTarta.y) && (objPlayer.y <= objTarta.y + 32) &&
+			keyboard_check_pressed(global.key_interact))
+		{
+			instance_destroy(obj_textbox);
+			objPlayer.playerMove = false;
+			objPlayer.speed = 0;
+			objPlayer.sprite_index = sprPlayerUp;
+			objTarta.sprite_index = sprTartaTerminada;
+			alarm[0] = 20;
+			global.scene++;
+		}
+		break;
+	case 32:
+		break;
+	case 33:
+		with(objLaria){
+			image_index = 0;
+			text = ["Lo siento tío, pero ahí has estado muy lento. Ops, espera, ¿tu quien porras eres?",
+			"¡Pero, cómo! ¡¿Niña tú que haces aquí?!",
+			"Uy lo siento, pensaba que era otra persona, mira tú. Pues me he comido ya el trozo de tarta, otra vez será.  Es que hay que aprovechar toda la comida sabe. En este mundo muere mucha gente de hambre y esas cosas. ¡Qué rica estaba! Por cierto, me llamo Laria, que se me olvida presentarme.",
+			"Soy Reed. Deberías tratar con más respeto a la gente... Espera ¿no eres muy joven para estar en una fiesta privada en un yate de un empresario de noche?",
+			"¡Hala, no me sea abuelo! Tengo 19 años, voy a la Academia de Artes, dentro de nada tendré que pagar impuestos. Oiga ¿y usted a que se dedica? Por su aspecto diría... ¡Abogado de mala muerte! ¿He acertado? ¡Diga que sí!",
+			"No te voy a decir nada, me has robado la tarta.",
+			"Espera ¡¿que?! Eso no es justo ¡Oigaaaa!"];
+			speakers = [id, objPlayer, id, objPlayer, id, objPlayer, id];
+			next_line=[0, 0, 0, 0, 0, 0, -1];
+			activate_textbox = create_textbox(text, speakers, next_line);
+		}
+		global.scene++;
+		break;
+	case 34:
+		with(objLaria){
+			if (!instance_exists(activate_textbox)) {
+				image_index = 1;
+				with(objPlayer){
+					sprite_index = sprPlayerDown;
+					vspeed = +2;
+				}
+				global.scene++;
+			}
+		}
+		break;
+	case 35:
+		with(objPlayer){
+			if(y >= objIbukiCamarote.y){
+				vspeed = 0;
+				objLaria.image_index = 1;
+				sprite_index = sprPlayerRight;
+				hspeed = +0.5;
+				global.scene++;
+			}
+		}
+		alarm[0] = 20;
+		break;
+	case 36:
+		break;
+	case 37:
+		with(objPlayer){
+			text = ["(Una cría de la Academia de Artes, lo que faltaba... ¿Quiénes somos los del barco? ¿Porque estamos aquí? ¿Ellos han venido por la misma carta que recibí? ¿Y eso de que haya habido otras fiestas que significa?)"];
+			speakers = [id];
+			next_line=[-1];
+			activate_textbox = create_textbox(text, speakers, next_line);
+		}
+		global.scene++;
+		break;
+	case 38:
+		with(objPlayer){
+			if (x >= objIbukiCamarote.x - 64){
+				hspeed = 0;
+			}
+			if (!instance_exists(activate_textbox)) {
+				hspeed = +0.5;
+				with(objIbukiCamarote){
+					image_index = 1;
+					hspeed = -2;
+				}
+				global.scene++;
+			}
+		}
+		break;
+	case 39:
+		with(objIbukiCamarote){
+			if (x <= 720) {
+				hspeed = 0;
+				image_index = 3;
+				global.scene++;
+			}
+		}
+		break;
+	case 40:
+		with(objPlayer){
+			if (x >= 690){
+				hspeed = 0;
+				x -= 15;
+				objIbukiCamarote.y += 15;
+				objGame.alarm[0] = 20;
+				global.scene++;
+			}
+		}
+		break;
+	case 41:
+		break;
+	case 42:
+		with(objEzra){
+			text = ["..."];
+			speakers = [id];
+			next_line=[-1];
+			activate_textbox = create_textbox(text, speakers, next_line);
+		}
+		global.scene++;
+		break;
+	case 43:
+		with(objEzra){
+			if (!instance_exists(activate_textbox)) {
+				objGame.alarm[0] = 20;
+				global.scene++;
+			}
+		}
+		break;
+	case 44:
+		break;
+	case 45:
+		with(objIbukiCamarote){
+			text = ["¡Ay! ¡Mi pie!",
+					"¡Oh! Lo siento mucho, no era mi intención... Ehh... Soy Reed, buenas noches señorita...",
+					"Takemi, Ibuki Takemi. Uhh... ¿Usted no...? ¡Ahh!",
+					"Está temblando, ¿Se encuentra bie--?",
+					"¡Le ruego que me disculpe!"];
+			speakers = [id, objPlayer, id, objPlayer, id];
+			next_line=[0, 0, 0, 0, -1];
+			activate_textbox = create_textbox(text, speakers, next_line);
+			global.scene++;
+		}
+		break;
+	case 46:
+		with(objIbukiCamarote){
+			if (!instance_exists(activate_textbox)) {
+				vspeed = -4;
+				global.scene++;
+			}
+		}
+		break;
+	case 47:
+		with(objIbukiCamarote){
+			if (y <= objLaria.y){
+				vspeed = 0;
+				image_index = 2;
+				hspeed = 4;
+				global.scene++;
+			}
+		}
+		break;
+	case 48:
+		if (objIbukiCamarote.x >= 945) {
+			with(objIbukiCamarote){
+				instance_destroy();
+			}
+			with(objPlayer){
+				text = ["(Vaya, para una persona medianamente normal del barco acabo espantándola... Ya solo queda, el hombre que lleva en el rincón desde que he entrado. Se parece a mí un poco, quizás él puede decirme algo sobre lo que está pasando o al menos tener una conversación racional.)"];
+				speakers = [id];
+				next_line=[-1];
+				activate_textbox = create_textbox(text, speakers, next_line);
+			}
+			global.scene++;
+		}
+		break;
+	case 49:
+		with(objPlayer){
+			if (!instance_exists(activate_textbox)) {
+				playerMove = true;
+				global.scene++;
+			}
+		}
+		break;
+	case 50:
+		if ((objPlayer.x >= objNathan.x - 16) && (objPlayer.x <= objNathan.x + 16) &&
+			(objPlayer.y >= objNathan.y - 64) && (objPlayer.y <= objNathan.y) &&
+			keyboard_check_pressed(global.key_interact))
+		{
+			with(objPlayer){
+				playerMove = false;
+				speed = 0;
+				sprite_index = sprPlayerDown;
+			}
+			with(objNathan){
+				text = ["Buenas noches, me llamo Reed, ¿podría decirme si sabe que va a ocurrir cuando llegue el anfitrión?",
+						"...",
+						"(¿Qué le pasa? ¿He dicho algo malo? ¿Y esa mueca? Mierda, no entiendo qué clase de gente está en esta fiesta.)",
+						"¿Cómo se llama uste--?"];
+				speakers = [objPlayer, id, objPlayer, objPlayer];
+				next_line=[0, 0, 0, -1];
+				activate_textbox = create_textbox(text, speakers, next_line);
+			}
+			global.scene++;
+		}
+		break;
+	case 51:
+		with(objPlayer){
+			if (!instance_exists(activate_textbox)) {
+				instance_create_depth(945, 528, 1, objCharles);
+				objCharles.hspeed = -2;
+				global.scene++;
+			}
+		}
+		break;
+	case 52:
+		with(objCharles){
+			if(x >= objEzra.x){
+				hspeed = 0;
+				text = ["¡Pero bueno! Habéis venido todos, que bien, que bien JA JA. Incluso el señor Reed, de quien yo dudaba el que más.",
+						"Zero..."];
+				speakers = [id, objPlayer];
+				next_line=[0, -1];
+				activate_textbox = create_textbox(text, speakers, next_line);
+				global.scene++;
+			}
+		}
+		break;
+	case 53:
+		with(objCharles){
+			if (!instance_exists(activate_textbox)) {
+				objEzra.image_index = 2;
+				objLaria.image_index = 0;
+				objCharles.hspeed = -2;
+				global.scene++;
+			}
+		}
+		break;
+	case 54:
+		with(objCharles){
+			if (x <= objLaria.x + 32){
+				hspeed = 0;
+				sprite_index = sprCharlesDown;
+				vspeed = +2;
+				global.scene++;
+			}
+		}
+		break;
+	case 55:
+		with(objCharles){
+			if (y >= objEzra){
+				vspeed = 0;
+				objLaria.image_index = 0;
+				objEzra.image_index = 1;
+				sprite_index = sprCharlesLeft;
+				hspeed = -2;
+				global.scene++;
+			}
+		}
+		break;
+	case 56:
+		with(objCharles){
+			if (x <= objTarta){
+				hspeed = 0;
+				text = ["¡Ese soy yo! Tengo que hablar contigo amigo mío, antes de que comience la fiesta. Aunque a juzgar por los trozos de tarta que quedan parece que la fiesta ya ha empezado ¿no, Laria?"];
+				speakers = [id];
+				next_line=[-1];
+				activate_textbox = create_textbox(text, speakers, next_line);
+				global.scene++;
+			}
+		}
+		break;
+	case 57:
+		with(objCharles){
+			if (!instance_exists(activate_textbox)) {
+				objCharles.sprite_index = sprCharlesUp;
+				objGame.alarm[0] = 20;
+				global.scene++;
+			}
+		}
+		break;
+	case 58:
+		break;
+	case 59:
+		objLaria.image_index = 2;
+		objGame.alarm[0] = 20;
+		global.scene++;
+		break;
+	case 60:
+		break;
+	case 61:
+		with(objPlayer){
+			text = ["(La cara de la chica ha cambiado en un momento.)"];
+			speakers = [id];
+			next_line=[-1];
+			activate_textbox = create_textbox(text, speakers, next_line);
+			global.scene++;
+		}
+		break;
+	case 62:
+		with(objPlayer){
+			if (!instance_exists(activate_textbox)) {
+				objCharles.sprite_index = sprCharlesLeft;
+				objCharles.hspeed = -2;
+				global.scene++;
+			}
+		}
+		break;
+	case 63:
+		with (objCharles){
+			if (x <= 448){
+				hspeed = 0;
+				text = ["Pues si me acompaña a esta mesa señor Reed, podremos discutir el asunto que lo atañe. Acérquese, acérques---"];
+				speakers = [id];
+				next_line=[-1];
+				activate_textbox = create_textbox(text, speakers, next_line);
+				global.scene++;
+			}
+		}
+		break;
+	case 64:
+		with(objCharles){
+			if (!instance_exists(activate_textbox)) {
+				text = ["Eh… ¿Y las luces?",
+						"¡AHHHHH! ¡¿QUÉ ESTÁ PASANDO?! ¡NO VEO NADA!",
+						"¡ESPERA! ¿un apagón? ¡Ja ja esto se pone interesante! La caja de control estaba a la entrada ¿no? Voy a ver si lo arreglo...",
+						"Hmm-",
+						"¿QUÉ? ¡¿QUÉ ES ESTO?! ¡¡NO, NO, NOOOO!! ¡DETENGASE AHORA MISMO!",
+						"Señor Zero tranquilícese, solo es un apagón, Williams ahora lo arr--"];
+				speakers = [id, objLaria, objEzra, objNathan, objCharles, id];
+				next_line=[0, 0, 0, 0, 0, -1];
+				activate_textbox = create_textbox(text, speakers, next_line);
+				global.scene++;
+			}
+		}
+		break;
+	case 65:
+		with(objCharles){
+			draw_set_color(c_black);
+			draw_set_alpha(1);
+			draw_rectangle(0, 0, camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]), 0);
+			if (!instance_exists(activate_textbox)) {
+				with(objNathan){
+					x = 288;
+					y = 608;
+					image_index = 1;
+				}
+				with(objEzra){
+					x = 912;
+					y = 480;
+					image_index = 0;
+				}
+				with(objLaria){
+					image_index = 1;
+				}
+				with(objCharles){
+					image_index = 2;
+				}
+				audio_play_sound(sndDisparo, 1, false);
+				alarm = 120;
+				global.scene++;
+			}
+		}
+		break;
+	case 66:
+		draw_set_color(c_black);
+		draw_set_alpha(1);
+		draw_rectangle(0, 0, camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]), 0);
+		break;
+	case 67:
+		with (objPlayer){
+			text = ["¡¡AAAAAAAAAAAAAAHHHHHHHH!! ¡¡ESTÁ MUERTO!! ¡¿QUÉHA PASADO?!",
+					"¡¿Qué?! ¡No puede ser! Esto es…una tragedia… ¿QUIÉN HA SIDO?",
+					"Dios...",
+					"¡¿CÓMO?!",
+					"EL OTRO HOMBRE, YA NO ESTÁ. Ha tenido que ser él, y ahora ha huido por la borda... ¡O QUIZAS SIGUE AQUÍ! ¡Noooooo, no quiero morir!",
+					"Oye, tranquilízate, si nos quisiera haber matado ya lo hubiera hecho. Lo mejor es que nos calmemos todos, llamemos a la guardia costera y cuando lleguen les expliquemos lo ocurrido. No pasa nada.",
+					"Muy tranquilo estas tú..."];
+			speakers = [objLaria, objEzra, objNathan, id, objLaria, objEzra, objNathan];
+			next_line=[0, 0, 0, 0, 0, 0, -1];
+			activate_textbox = create_textbox(text, speakers, next_line);
+			global.scene++;
+		}
+		break;
+	case 68:
+		with(objPlayer){
+			if (!instance_exists(activate_textbox)) {
+				with (objNathan) {
+					image_index = 3;
+					hspeed = +2;
+				}
+				global.scene++;
+			}
+		}
+		break;
+	case 69:
+		with(objNathan){
+			if(x >= objTarta.x + 32){
+				hspeed = 0;
+				image_index = 2;
+				vspeed = -2;
+				global.scene++;
+			}
+		}
+		break;
+	case 70:
+		with(objNathan){
+			if(y <= objTarta.y){
+				vspeed = 0;
+				image_index = 3;
+				hspeed = 2;
+				global.scene++;
+			}
+		}
+		break;
+	case 71:
+		with(objNathan){
+			if(x >= 945){
+				instance_destroy();
+				global.scene++;
+			}
+		}
+		break;
+	case 72:
+		with (objPlayer){
+			text = ["No me esperaba que esto terminase así, pero llegué a este barco para hacer mi trabajo y eso haré. INVESTIGAR ESTE ASESINATO"];
+			speakers = [id];
+			next_line=[-1];
+			activate_textbox = create_textbox(text, speakers, next_line);
+			global.scene++;
+		}
+		break;
+	case 73:
+		with(objPlayer){
+			if (!instance_exists(activate_textbox)) {
+				playerMove = true;
+				global.scene++;
+			}
+		}
+		break;
+	/*
+	case 31:
 		if (objPlayer.x <= objLaria.x + 32){
 			objPlayer.playerMove = false;
 			objPlayer.speed = 0;
@@ -428,27 +863,66 @@ switch(global.scene){
 		break;
 	case 43:
 		with(objPlayer){
-			vspeed = 0;
 			text = ["(Una cría de la Academia de Artes, lo que faltaba... ¿Quiénes somos los del barco? ¿Porque estamos aquí? ¿Ellos han venido por la misma carta que recibí? ¿Y eso de que haya habido otras fiestas que significa?)"];
 			speakers = [id];
 			next_line=[-1];
 			activate_textbox = create_textbox(text, speakers, next_line);
+			sprite_index = sprPlayerDown;
+			vspeed = +0.3;
 		}
 		global.scene++;
 		break;
 	case 44:
 		with(objPlayer){
-			if(y <= 489){
-				sprite_index = sprPlayerDown;
-				vspeed = 0.5;
-			}
-			if(y >= 531){
-				sprite_index = sprPlayerUp;
-				vspeed = -0.3;
-			}
 			if (!instance_exists(activate_textbox)) {
+				y = 545;
+				vspeed = 0.5;
+				objIbukiCamarote.x = 465;
+				objIbukiCamarote.y = 547;
+				objIbukiCamarote.hspeed = +2;
 				global.scene++;
 			}
 		}
 		break;
+	case 45:
+		with (objPlayer){
+			if(y <= 489){
+					sprite_index = sprPlayerDown;
+					vspeed = 1;
+				}
+			if(y >= 531){
+				sprite_index = sprPlayerUp;
+				vspeed = -1;
+			}
+		}
+		with(objIbukiCamarote){
+			image_index = 3;
+			vspeed = -2;
+		}
+		global.scene++;
+		break;
+	case 46:
+		with(objPlayer){
+			if(y <= 489){
+					sprite_index = sprPlayerDown;
+					vspeed = 1;
+				}
+			if(y >= 531){
+				sprite_index = sprPlayerUp;
+				vspeed = -1;
+			}
+		}
+		with(objIbukiCamarote){
+			if(y <= 547){
+				vspeed = 0;
+				image_index = 2;
+				hspeed = 2;
+				objPlayer.vspeed += objPlayer.vspeed;
+				global.scene++;
+			}
+		}
+		break;
+	case 47:
+		break
+		*/
 }

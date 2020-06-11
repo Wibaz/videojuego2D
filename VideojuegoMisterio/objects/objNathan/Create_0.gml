@@ -30,3 +30,4 @@ else if (global.Key)
 	speakers = [id,objPlayer,id,id];
 	next_line=[0,[2,3],-1,-1];
 }
+instance_destroy();
