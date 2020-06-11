@@ -1639,6 +1639,14 @@
             }
         },
         {
+            "Key": "c529fe43-7467-4f74-a65c-21812a897731",
+            "Value": {
+                "id": "a07ad0d6-1fa3-48bc-9ed4-926ad4eac9b6",
+                "resourcePath": "sprites\\sprBlood\\sprBlood.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c55d1a83-0a8d-4d9a-8acb-fad168c28795",
             "Value": {
                 "id": "c2d88a24-b0f8-4cd0-8d65-fde02f2a290e",
