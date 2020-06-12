@@ -65,6 +65,48 @@
             "value": "False",
             "varName": "musicaPuzzle",
             "varType": 3
+        },
+        {
+            "id": "d8c336a9-e630-42bf-b852-8471ac687ee5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "musicaMenu",
+            "varType": 3
+        },
+        {
+            "id": "3ef27cc8-4f2e-4af6-b232-e6ad3586a859",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "musicaGeneral",
+            "varType": 3
+        },
+        {
+            "id": "5d6840ee-69d8-447c-a770-ce7707cfe1a9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "NoSuena",
+            "varType": 3
         }
     ],
     "solid": false,
