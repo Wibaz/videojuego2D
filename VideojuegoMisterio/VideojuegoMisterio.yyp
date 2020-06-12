@@ -1343,6 +1343,14 @@
             }
         },
         {
+            "Key": "a3089733-8858-4ac1-a29d-c1e047ee05bd",
+            "Value": {
+                "id": "ca872528-d2d4-4be2-a1f3-524bb981fcb5",
+                "resourcePath": "sprites\\sprFondoFinal\\sprFondoFinal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a5ce60e7-760c-4e21-8e45-d0bf3b22e3ae",
             "Value": {
                 "id": "ef61638b-b857-4f33-8e49-e4f8fcb0d633",
@@ -1724,6 +1732,14 @@
                 "id": "fc13b9a3-7da0-4396-ac00-ec014b3e3578",
                 "resourcePath": "objects\/objPuzzle1\/objPuzzle1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cda874a7-1587-4cf7-942a-d05cb2c6cb1a",
+            "Value": {
+                "id": "6177c595-f40c-40ff-b191-bfa01f64703b",
+                "resourcePath": "sprites\\sprFondoPortada\\sprFondoPortada.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
