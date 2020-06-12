@@ -1,14 +1,26 @@
+if (!global.DestruirFinAnimacion || room==Computer || room=puzzle1 || room=ErrorScreen || room=PuzleOrdenador) exit;
 currentRoom = room;
 
 ini_open("Partida.ini");
 ini_write_real("Jugador", "PX", objPlayer.x);
 ini_write_real("Jugador", "PY", objPlayer.y);
 ini_write_real("Jugador", "ROOM", currentRoom);
-
-ini_write_real("Controles", "UP",		global.key_up);
-ini_write_real("Controles", "DOWN",		global.key_down);
-ini_write_real("Controles", "RIGHT",	global.key_right);
-ini_write_real("Controles", "LEFT",		global.key_left);
-ini_write_real("Controles", "INTERACT",	global.key_interact);
-ini_write_real("Controles", "ESCAPE",	global.key_escape);
+ini_read_real("Controles", "UP",		global.key_up);
+ini_read_real("Controles", "DOWN",		global.key_down);
+ini_read_real("Controles", "RIGHT",		global.key_right);
+ini_read_real("Controles", "LEFT",		global.key_left);
+ini_read_real("Controles", "INTERACT",	global.key_interact);
+ini_read_real("Controles", "ESCAPE",	global.key_escape);
+ini_read_real("VariableGlobal", "Key",	global.Key);
+ini_read_real("VariableGlobal", "Puzzle2Completado",	global.Puzzle2Completado);
+ini_read_real("VariableGlobal", "IbukiParla",	global.IbukiParla);
+ini_read_real("VariableGlobal", "DestruirIbuki",	global.DestruirIbuki);
+ini_read_real("VariableGlobal", "DestruirOtrosNPC",	global.DestruirOtrosNPC);
+ini_read_real("VariableGlobal", "FuenteDeAlimentacion",	global.FuenteDeAlimentacion);
+ini_read_real("VariableGlobal", "PlacaBase",	global.PlacaBase);
+ini_read_real("VariableGlobal", "HardDisk",	global.HardDisk);
+ini_read_real("VariableGlobal", "serverOkay",	global.serverOkay);
+ini_read_real("VariableGlobal", "FinAnimacion",	global.FinAnimacion);
+ini_read_real("VariableGlobal", "DestruirFinAnimacion",	global.DestruirFinAnimacion);
+ini_read_real("VariableJugador", "visible",	objPlayer.visible);
 ini_close();

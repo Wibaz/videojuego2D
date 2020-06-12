@@ -108,3 +108,4 @@ if (place_meeting(x,y,objPuzzle1) && input_interact && !global.Key)
 	other.visible = false;	
 	room_goto(puzzle1);
 }	
+global.PlayerVisible=visible;

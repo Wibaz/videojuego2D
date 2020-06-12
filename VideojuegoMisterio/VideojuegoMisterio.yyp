@@ -359,14 +359,6 @@
             }
         },
         {
-            "Key": "28ac9004-dfc2-4dfe-9fef-c242269da019",
-            "Value": {
-                "id": "fb30ce68-d80c-4491-9bbf-8f012dc9a9c0",
-                "resourcePath": "objects\/objItem\/objItem.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "28f05924-7ee4-4469-b6b0-636d2aa8ec2f",
             "Value": {
                 "id": "394d9f17-b153-4e9b-9eb4-f3b75e12ce6c",
@@ -543,14 +535,6 @@
             }
         },
         {
-            "Key": "41cc2326-d61c-4001-83b9-535331ffe6ff",
-            "Value": {
-                "id": "7239c597-f82b-4d10-88f7-e4fb2a0367dc",
-                "resourcePath": "sprites\/borrarTesteoInventarioItems\/borrarTesteoInventarioItems.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "438f040b-3a74-43cf-8e54-85ab38c31262",
             "Value": {
                 "id": "7c313f1a-f425-47e5-a342-540529157a42",
@@ -651,14 +635,6 @@
             "Value": {
                 "id": "8c731623-ffa0-425e-8242-8d83cd7a9b94",
                 "resourcePath": "objects\/objLibro\/objLibro.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "4da3b58c-aa71-4700-9f0b-600ade8e8cfd",
-            "Value": {
-                "id": "9de7f0c1-6237-4a58-b7ef-dda2ce5fef69",
-                "resourcePath": "objects\/objControl\/objControl.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -796,14 +772,6 @@
                 "id": "9c515f65-9752-47bd-9a70-1a832c93ab30",
                 "resourcePath": "scripts\/resume_game\/resume_game.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5f6bb9fa-c73c-45dc-b008-4b5e90aaf1c0",
-            "Value": {
-                "id": "822b5a09-6121-45f5-96c0-8c9809de29f0",
-                "resourcePath": "sprites\/borrarTesteoInventarioUI\/borrarTesteoInventarioUI.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1351,14 +1319,6 @@
             }
         },
         {
-            "Key": "a5ce60e7-760c-4e21-8e45-d0bf3b22e3ae",
-            "Value": {
-                "id": "ef61638b-b857-4f33-8e49-e4f8fcb0d633",
-                "resourcePath": "sprites\/borrarTesteoIventarioItemMonedas\/borrarTesteoIventarioItemMonedas.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a6f9db2a-3325-45b0-a139-661e85f8beed",
             "Value": {
                 "id": "ebff1873-14a2-4307-bd7c-a8781754c083",
@@ -1652,14 +1612,6 @@
                 "id": "c2d88a24-b0f8-4cd0-8d65-fde02f2a290e",
                 "resourcePath": "sounds\/sndDisparo\/sndDisparo.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "c84418f4-f8da-403b-b07e-4d93a31f6119",
-            "Value": {
-                "id": "91273a95-06ec-42d6-b471-42b634ec28ee",
-                "resourcePath": "objects\/objInventario\/objInventario.yy",
-                "resourceType": "GMObject"
             }
         },
         {

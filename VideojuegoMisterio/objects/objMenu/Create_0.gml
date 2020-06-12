@@ -11,7 +11,6 @@ global.key_right	= ord("D");
 global.key_up		= ord("W");
 global.key_down		= ord("S");
 global.key_interact	= ord("E");
-global.key_inventory= ord("I");
 
 display_set_gui_size(global.view_width, global.view_height);
 
@@ -67,7 +66,6 @@ ds_menu_controls = create_menu_page(
 	["DOWN",		menu_element_type.input,			"key_down",				global.key_down],
 	["ESCAPE",		menu_element_type.input,			"key_escape",			global.key_escape],
 	["INTERACT",	menu_element_type.input,			"key_interact",			global.key_interact],
-	["INVENTORY",	menu_element_type.input,			"key_inventory",		global.key_inventory],
 	["BACK",		menu_element_type.page_transfer,	menu_page.settings],
 );
 

@@ -18,3 +18,5 @@ global.HardDisk = false;
 global.serverOkay=false;
 global.FinAnimacion=false;
 global.DestruirFinAnimacion=false;
+global.PlayerVisible=true;
+visible=global.PlayerVisible;
