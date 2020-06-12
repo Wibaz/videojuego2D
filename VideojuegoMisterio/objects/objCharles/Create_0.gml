@@ -1,7 +1,8 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
-// Inherit the parent event
-event_inherited();
-name="Charles";
-portrait=8;
+portrait_index = 13;
+voice = snd_voice1;
+name = "Charles";
 
+text = ["This person has nothing to say."];
+speakers = [id];
+next_line = [0];
+image_speed=3;

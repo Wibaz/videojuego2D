@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "objManoDerecha",
     "eventList": [
-        
+        {
+            "id": "129d18ae-50ae-4848-9a78-a97fb4103184",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "9efc9c68-7228-43b5-9ccb-e080ca8a9a55"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

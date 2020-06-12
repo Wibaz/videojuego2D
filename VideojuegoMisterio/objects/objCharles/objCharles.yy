@@ -5,16 +5,6 @@
     "name": "objCharles",
     "eventList": [
         {
-            "id": "065a7ac5-a35b-4fff-a311-fd4390f67755",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "cc330fb6-f5af-4fac-8dba-39fd5d3034d4"
-        },
-        {
             "id": "ccb37868-d874-4db6-9dfb-01a3038136eb",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "cc330fb6-f5af-4fac-8dba-39fd5d3034d4"
+        },
+        {
+            "id": "006fbe9c-5d88-4cf5-8981-da3c714fb143",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
             "m_owner": "cc330fb6-f5af-4fac-8dba-39fd5d3034d4"
         }
     ],

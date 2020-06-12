@@ -34,8 +34,8 @@ if(inputting) {
 					break;
 				case 2:
 					//Music
-					if(!audio_is_playing(snd_sea)){
-						audio_play_sound(snd_sea, 1, false);
+					if(!audio_is_playing(snd_voice1)){
+						audio_play_sound(snd_voice1, 1, false);
 					}
 					break;
 			}

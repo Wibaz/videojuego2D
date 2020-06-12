@@ -24,35 +24,37 @@ switch (state) {
 }
 
 switch(global.scene){
-	case 0:
-		objPlayer.sprite_index = sprPlayerLeft;
+	#region Cubierta
+	case 0: // Deja el sprite del jugador mirando a la izquierda
+		objPlayer.sprite_index = sprPlayerIddleLeft;
 		objPlayer.playerMove = false;
 		alarm[0] = 40;
 		global.scene++;
 		break;
 	case 1:
 		break;
-	case 2:
+	case 2: // Crear la lluvia
 		instance_create_layer(758, 427, "Weather", particle_rain);
 		global.scene++;
 		break;
-	case 3:
+	case 3: // Tiempo hasta que se cree objManoDerecha
 		alarm[0] = 200;
 		global.scene++;
 		break;
 	case 4:
 		break;
-	case 5:
+	case 5: // Creación y velocidad de objManoDereceha
 		instance_create_depth(758, objPlayer.y, 1, objManoDerecha);
 		with (objManoDerecha) {
-			image_index = 1;
+			sprite_index = sprManoDchaLeft;
 			hspeed = -2;
 		}
 		global.scene++;
 		break;
-	case 6:
+	case 6: // Diálogo objManoDerecha cubierta
 		with(objManoDerecha){
 			if(x < (objPlayer.x + 32)){
+				sprite_index = sprManoDchaIdleLeft;
 				hspeed = 0;
 				text = ["Señor Reed, es mejor que pase adentro o va a echar a perder su traje. Los demás invitados ya están en la sala principal y mi señor no tardara nada en llegar. Quiere hablar con usted antes de nada.",
 						"(Mmm... Está bien, esperaré allí. Más vale que esto no sea una pérdida de tiempo, no estoy aquí para bromas o fiestas.)"];
@@ -63,10 +65,10 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 7:
+	case 7: // Termina el diálogo de objManoDerecha 
 		with(objManoDerecha){
 				if (!instance_exists(activate_textbox)) {
-					image_index = 3;
+					sprite_index = sprManoDchaRight
 					hspeed = 2;
 					objPlayer.sprite_index = sprPlayerRight;
 					objPlayer.hspeed = 2;
@@ -74,7 +76,7 @@ switch(global.scene){
 				}
 		}
 		break;
-	case 8:
+	case 8: // objManoDerecha sale de la escena
 		with (objManoDerecha){
 			if (x > 758) {
 				instance_destroy();
@@ -82,19 +84,22 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 9:
+	#endregion
+	#region Pasillo
+	#region Hasta 1º esquina
+	case 9: // Entra al pasillo, objManoDerecha se mueve a la izquierda y objPlayer se mueve hacia arriba
 		if (room == Pasillo) {
 			objPlayer.sprite_index = sprPlayerUp;
 			instance_create_depth(objPlayer.x, objPlayer.y - 32, 1, objManoDerecha);
 			with (objManoDerecha) {
-				image_index = 1;
+				sprite_index = sprManoDchaLeft;
 				hspeed = -2;
 			}
 			objPlayer.vspeed = -2;
 			global.scene++;
 		}
 		break;
-	case 10:
+	case 10: // objPlayer se mueve hacia a la izquierda
 		if (objPlayer.y <= objManoDerecha.y){
 			with (objPlayer){
 				vspeed = 0;
@@ -104,18 +109,19 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 11:
+	#endregion
+	#region Hasta 2º esquina
+	case 11: // objManoDerecha se mueve hacia arriba
 		if (objManoDerecha.x <= 125) {
 			with (objManoDerecha) {
-				image_index = 1;
+				sprite_index = sprManoDchaUp;
 				hspeed = 0;
-				image_index = 2;
 				vspeed = -2;
 			}
 			global.scene++;
 		}
 		break;
-	case 12:
+	case 12: // objPlayer se mueve hacia arriba
 		if (objPlayer.x <= objManoDerecha.x){
 			with (objPlayer) {
 				hspeed = 0;
@@ -125,17 +131,19 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 13:
+	#endregion
+	#region Hasta 3º esquina
+	case 13: // objManoDerecha se mueve a la izquirda
 		if (objManoDerecha.y <= 45){
 			with(objManoDerecha) {
 				vspeed = 0;
-				image_index = 1;
+				sprite_index = sprManoDchaLeft
 				hspeed = -2;
 			}
 			global.scene++;
 		}
 		break;
-	case 14:
+	case 14: // objPlayer se mueve a la izquierda
 		if (objPlayer.y <= objManoDerecha.y){
 			with(objPlayer){
 				vspeed = 0;
@@ -145,7 +153,8 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 15:
+	#endregion
+	case 15: // objManoDerecha sale de la escena
 		if (objManoDerecha.x <= 32){
 			with(objManoDerecha) {
 				instance_destroy();
@@ -153,16 +162,18 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 16:
+	#endregion
+	#region Salon
+	case 16: // Creacion de las instancias
 		if (room == Salon){
 			instance_create_depth(192, 592, 0, objNathan);
-			objNathan.image_index = 3;
+			objNathan.sprite_index = sprNathanIdleRight;
 			instance_create_depth(816, 592, 1, objEzra);
-			objEzra.image_index = 1;
+			objEzra.sprite_index = sprEzraIdleLeft;
 			instance_create_depth(656, objTarta.y - 32, 1, objLaria);
-			objLaria.image_index = 1;
+			objLaria.sprite_index = sprLariaIdleLeft;
 			instance_create_depth(752, 592, 1, objIbukiCamarote);
-			objIbukiCamarote.image_index = 2;
+			objIbukiCamarote.sprite_index = sprIbukiIdleRight;
 			
 			with(objPlayer){
 				hspeed = 0;
@@ -175,7 +186,7 @@ switch(global.scene){
 		break;
 	case 17:
 		break;
-	case 18:
+	case 18: // 2º Diálogo objManoDerecha
 		with(objManoDerecha){
 			text = ["Nos vemos más tarde señor Reed. Sea paciente."];
 			speakers = [id];
@@ -184,7 +195,7 @@ switch(global.scene){
 		}
 		global.scene++;
 		break;
-	case 19:
+	case 19: // objPlayer se mueve a la izquierda para hacer espacio a objManoDerecha
 		with(objManoDerecha){
 			if (!instance_exists(activate_textbox)) {
 				with(objPlayer){
@@ -195,27 +206,27 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 20:
+	case 20: // objPlayer mira a la izquierda mientras pasa objManoDerecha
 		if(objPlayer.x <= 881){
 			with(objPlayer){
 				hspeed = 0;
-				sprite_index = sprPlayerRight;
+				sprite_index = sprPlayerIddleRight;
 			}
 			objManoDerecha.vspeed = +2;
 			global.scene++;
 		}
 		break;
-	case 21:
+	case 21: // objManoDerecha se va a ir de la sala
 		if (objManoDerecha.y >= objPlayer.y){
 			with(objManoDerecha) {
 				vspeed = 0;
-				image_index = 3;
+				sprite_index = sprManoDchaRight;
 				hspeed = +2;
 			}
 			global.scene++;
 		}
 		break;
-	case 22:
+	case 22: // objManoDerecha sale de la escena
 		if(objManoDerecha.x >= 945){
 			with(objManoDerecha){
 				instance_destroy();
@@ -223,7 +234,7 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 23:
+	case 23: // 1º Dialgo objPlayer
 		with(objPlayer){
 			text = ["(Que tipo tan extraño.)"];
 			speakers = [id];
@@ -232,26 +243,26 @@ switch(global.scene){
 		}
 		global.scene++;
 		break;
-	case 24:
+	case 24: // objEzra se mueve horizontalmente a objPlayer
 		with(objPlayer){
 			if (!instance_exists(activate_textbox)) {
-				objEzra.image_index = 3;
+				objEzra.sprite_index = sprEzraRight;
 				objEzra.hspeed = +2;
 				global.scene++;
 			}
 		}
 		break;
-	case 25:
+	case 25: // objEzra se mueve verticalmente a objPlayer
 		if(objEzra.x >= objPlayer.x){
 			with(objEzra){
 				hspeed = 0;
-				image_index = 2;
+				sprite_index = sprEzraUp;
 				vspeed = -2;
 			}
 			global.scene++;
 		}
 		break;
-	case 26:
+	case 26: // objEzra habla con objPlayer
 		if(objEzra.y <= objPlayer.y + 32){
 			objPlayer.sprite_index = sprPlayerDown;
 			with(objEzra){
@@ -272,28 +283,29 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 27:
+	case 27: // objEzra vuelve a su asiento vericalmente
 		with(objEzra){
 			if (!instance_exists(activate_textbox)) {
-				image_index = 0;
-				objEzra.vspeed = +2;
+				sprite_index = sprEzraDown;
+				vspeed = +2;
 				global.scene++;
 			}
 		}
 		break;
-	case 28:
+	case 28: // objEzra vuelve a su asiento horizontalmente
 		if (objEzra.y >= 592){
 			with(objEzra){
-				image_index = 1;
 				vspeed = 0;
+				sprite_index = sprEzraLeft;
 				hspeed = -2;
 			}
 			global.scene++;
 		}
 		break;
-	case 29:
+	case 29: // objEzra ha vuelto a su asiento
 		if(objEzra.x <= 816){
 			objEzra.hspeed = 0;
+			objEzra.sprite_index = sprEzraIdleLeft;
 			with(objPlayer){
 				text = ["(¿Que esperar de un escritor?, están todos locos. Pero ese nombre... ¿seguro que la noticia era sobre una novela? o... ¡Aghh maldita memoria de pez, por tu culpa estoy aquí en este barco de raritos!)",
 				"(Voy a tomar un poco de tarta, a ver si mejora la cosa.)"];
@@ -304,7 +316,7 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 30:
+	case 30: // objPlayer se puede mover
 		with(objPlayer){
 			if (!instance_exists(activate_textbox)) {
 				objPlayer.playerMove = true;
@@ -312,7 +324,7 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 31:
+	case 31: // objPlayer va a tomar tarta
 		if ((objPlayer.x >= objTarta.x - 16) && (objPlayer.x <= objTarta.x + 16) &&
 			(objPlayer.y >= objTarta.y) && (objPlayer.y <= objTarta.y + 32) &&
 			keyboard_check_pressed(global.key_interact))
@@ -320,7 +332,7 @@ switch(global.scene){
 			instance_destroy(obj_textbox);
 			objPlayer.playerMove = false;
 			objPlayer.speed = 0;
-			objPlayer.sprite_index = sprPlayerUp;
+			objPlayer.sprite_index = sprPlayerIddleUp;
 			objTarta.sprite_index = sprTartaTerminada;
 			alarm[0] = 20;
 			global.scene++;
@@ -328,9 +340,9 @@ switch(global.scene){
 		break;
 	case 32:
 		break;
-	case 33:
+	case 33: // 1º Dialogo objLaira
 		with(objLaria){
-			image_index = 0;
+			sprite_index = sprLariaIdleDown;
 			text = ["Lo siento tío, pero ahí has estado muy lento. Ops, espera, ¿tu quien porras eres?",
 			"¡Pero, cómo! ¡¿Niña tú que haces aquí?!",
 			"Uy lo siento, pensaba que era otra persona, mira tú. Pues me he comido ya el trozo de tarta, otra vez será.  Es que hay que aprovechar toda la comida sabe. En este mundo muere mucha gente de hambre y esas cosas. ¡Qué rica estaba! Por cierto, me llamo Laria, que se me olvida presentarme.",
@@ -344,10 +356,9 @@ switch(global.scene){
 		}
 		global.scene++;
 		break;
-	case 34:
+	case 34: // objPlayer huye de objLaira
 		with(objLaria){
 			if (!instance_exists(activate_textbox)) {
-				image_index = 1;
 				with(objPlayer){
 					sprite_index = sprPlayerDown;
 					vspeed = +2;
@@ -356,11 +367,11 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 35:
+	case 35: // objPlayer va hacia la derecha
 		with(objPlayer){
 			if(y >= objIbukiCamarote.y){
 				vspeed = 0;
-				objLaria.image_index = 1;
+				objLaria.sprite_index = sprLariaIdleLeft;
 				sprite_index = sprPlayerRight;
 				hspeed = +0.5;
 				global.scene++;
@@ -370,16 +381,17 @@ switch(global.scene){
 		break;
 	case 36:
 		break;
-	case 37:
+	case 37: // Dialogo fuera de Laira
 		with(objPlayer){
 			text = ["(Una cría de la Academia de Artes, lo que faltaba... ¿Quiénes somos los del barco? ¿Porque estamos aquí? ¿Ellos han venido por la misma carta que recibí? ¿Y eso de que haya habido otras fiestas que significa?)"];
 			speakers = [id];
 			next_line=[-1];
 			activate_textbox = create_textbox(text, speakers, next_line);
+			hspeed = 2;
 		}
 		global.scene++;
 		break;
-	case 38:
+	case 38: // Choque con Ibuki
 		with(objPlayer){
 			if (x >= objIbukiCamarote.x - 64){
 				hspeed = 0;
@@ -387,27 +399,29 @@ switch(global.scene){
 			if (!instance_exists(activate_textbox)) {
 				hspeed = +0.5;
 				with(objIbukiCamarote){
-					image_index = 1;
+					sprite_index = sprIbukiLeft;
 					hspeed = -2;
 				}
 				global.scene++;
 			}
 		}
 		break;
-	case 39:
+	case 39: // Ibuki yendo para arriba para chocarse
 		with(objIbukiCamarote){
 			if (x <= 720) {
 				hspeed = 0;
-				image_index = 3;
+				sprite_index = sprIbukiUp;
 				global.scene++;
 			}
 		}
 		break;
-	case 40:
+	case 40: // Se chocan objIbuki y objPlayer
 		with(objPlayer){
 			if (x >= 690){
 				hspeed = 0;
+				sprite_index = sprPlayerIddleRight;
 				x -= 15;
+				objIbukiCamarote.sprite_index = sprIbukiIdleUp;
 				objIbukiCamarote.y += 15;
 				objGame.alarm[0] = 20;
 				global.scene++;
@@ -416,7 +430,7 @@ switch(global.scene){
 		break;
 	case 41:
 		break;
-	case 42:
+	case 42: // Mirada de Ezra
 		with(objEzra){
 			text = ["..."];
 			speakers = [id];
@@ -425,7 +439,7 @@ switch(global.scene){
 		}
 		global.scene++;
 		break;
-	case 43:
+	case 43: // Añadir tiempo
 		with(objEzra){
 			if (!instance_exists(activate_textbox)) {
 				objGame.alarm[0] = 20;
@@ -435,7 +449,7 @@ switch(global.scene){
 		break;
 	case 44:
 		break;
-	case 45:
+	case 45: // 1º Diaalogo de Ibuki
 		with(objIbukiCamarote){
 			text = ["¡Ay! ¡Mi pie!",
 					"¡Oh! Lo siento mucho, no era mi intención... Ehh... Soy Reed, buenas noches señorita...",
@@ -448,25 +462,26 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 46:
+	case 46: // objIbuki sale para arriba con mucha velocidad
 		with(objIbukiCamarote){
 			if (!instance_exists(activate_textbox)) {
+				sprite_index = sprIbukiUp;
 				vspeed = -4;
 				global.scene++;
 			}
 		}
 		break;
-	case 47:
+	case 47: // objIbuki se dirige a la salida que esta a la derecha
 		with(objIbukiCamarote){
 			if (y <= objLaria.y){
 				vspeed = 0;
-				image_index = 2;
+				sprite_index = sprIbukiRight;
 				hspeed = 4;
 				global.scene++;
 			}
 		}
 		break;
-	case 48:
+	case 48: // objIbuki sale de la habitación
 		if (objIbukiCamarote.x >= 945) {
 			with(objIbukiCamarote){
 				instance_destroy();
@@ -480,7 +495,7 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 49:
+	case 49: // El objPlayer se mueve
 		with(objPlayer){
 			if (!instance_exists(activate_textbox)) {
 				playerMove = true;
@@ -488,7 +503,7 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 50:
+	case 50: // 1º Dialogo con Nathan
 		if ((objPlayer.x >= objNathan.x - 16) && (objPlayer.x <= objNathan.x + 16) &&
 			(objPlayer.y >= objNathan.y - 64) && (objPlayer.y <= objNathan.y) &&
 			keyboard_check_pressed(global.key_interact))
@@ -496,7 +511,7 @@ switch(global.scene){
 			with(objPlayer){
 				playerMove = false;
 				speed = 0;
-				sprite_index = sprPlayerDown;
+				sprite_index = sprPlayerIddleDown;
 			}
 			with(objNathan){
 				text = ["Buenas noches, me llamo Reed, ¿podría decirme si sabe que va a ocurrir cuando llegue el anfitrión?",
@@ -510,21 +525,20 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 51:
+	case 51: // Entra objCharles a la escena
 		with(objNathan){
 			if (!instance_exists(activate_textbox)) {
 				instance_create_depth(945, 528, 1, objCharles);
-				objCharles.image_index=0;
-				objCharles.sprite_index=sprCharlesLeft;
-				objCharles.image_speed=3;
+				objCharles.sprite_index = sprCharlesLeft;
 				objCharles.hspeed = -1;
 				global.scene++;
 			}
 		}
 		break;
-	case 52:
+	case 52: // 1º Dialpgo objCharles
 		with(objCharles){
 			if(x <= objEzra.x){
+				sprite_index = sprCharlesIdleLeft;
 				hspeed = 0;
 				text = ["¡Pero bueno! Habéis venido todos, que bien, que bien JA JA. Incluso el señor Reed, de quien yo dudaba el que más.",
 						"Zero..."];
@@ -535,18 +549,19 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 53:
+	case 53: // Cambio de escena de los personajes
 		with(objCharles){
 			if (!instance_exists(activate_textbox)) {
-				objPlayer.sprite_index = sprPlayerRight;
-				objEzra.image_index = 2;
-				objLaria.image_index = 3;
+				objPlayer.sprite_index = sprPlayerIddleRight;
+				objEzra.image_index = sprEzraIdleUp;
+				objLaria.sprite_index = sprLariaIdleRight;
+				objCharles.sprite_index = sprCharlesLeft;
 				objCharles.hspeed = -1;
 				global.scene++;
 			}
 		}
 		break;
-	case 54:
+	case 54: // objCharles se acerca a objLaira
 		with(objCharles){
 			if (x <= objLaria.x + 32){
 				hspeed = 0;
@@ -556,21 +571,22 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 55:
+	case 55: // objCharles ha llegado a segunda esquina
 		with(objCharles){
 			if (y >= objEzra.y){
 				vspeed = 0;
-				objLaria.image_index = 0;
-				objEzra.image_index = 1;
+				objLaria.sprite_index = sprLariaIdleDown;
+				objEzra.sprite_index = sprEzraIdleLeft;
 				sprite_index = sprCharlesLeft;
 				hspeed = -1;
 				global.scene++;
 			}
 		}
 		break;
-	case 56:
+	case 56: // objCharles llega a la posicion a objLaira
 		with(objCharles){
 			if (x <= objTarta.x){
+				sprite_index = sprCharlesIdleLeft;
 				hspeed = 0;
 				text = ["¡Ese soy yo! Tengo que hablar contigo amigo mío, antes de que comience la fiesta. Aunque a juzgar por los trozos de tarta que quedan parece que la fiesta ya ha empezado ¿no, Laria?"];
 				speakers = [id];
@@ -580,10 +596,10 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 57:
+	case 57: // objCharles mira a objLaira
 		with(objCharles){
 			if (!instance_exists(activate_textbox)) {
-				objCharles.sprite_index = sprCharlesUp;
+				objCharles.sprite_index = sprCharlesIdleUp;
 				objGame.alarm[0] = 20;
 				global.scene++;
 			}
@@ -591,14 +607,14 @@ switch(global.scene){
 		break;
 	case 58:
 		break;
-	case 59:
-		objLaria.image_index = 2;
+	case 59: // objLaira aparta la mirada de objCharles
+		objLaria.sprite_index = sprLariaIdleUp;
 		objGame.alarm[0] = 20;
 		global.scene++;
 		break;
 	case 60:
 		break;
-	case 61:
+	case 61: // habla objPlayer
 		with(objPlayer){
 			text = ["(La cara de la chica ha cambiado en un momento.)"];
 			speakers = [id];
@@ -607,7 +623,7 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 62:
+	case 62: // objCharles se va a la segunda mesaa a la izquierda
 		with(objPlayer){
 			if (!instance_exists(activate_textbox)) {
 				objCharles.sprite_index = sprCharlesLeft;
@@ -616,9 +632,10 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 63:
+	case 63: // objCharles llega a la segunda mesa
 		with (objCharles){
 			if (x <= 448){
+				sprite_index = sprCharlesIdleLeft;
 				hspeed = 0;
 				text = ["Pues si me acompaña a esta mesa señor Reed, podremos discutir el asunto que lo atañe. Acérquese, acérques---"];
 				speakers = [id];
@@ -628,7 +645,7 @@ switch(global.scene){
 			}
 		}
 		break;
-	case 64:
+	case 64: // Cuando termina el diálogo se apaga la luz de la escena
 		with(objCharles){
 			if (!instance_exists(activate_textbox)) {
 				instance_create_layer(0, 0, "Luz", o_surface_Light);
@@ -639,31 +656,38 @@ switch(global.scene){
 						"Hmm-",
 						"¿QUÉ? ¡¿QUÉ ES ESTO?! ¡¡NO, NO, NOOOO!! ¡DETENGASE AHORA MISMO!",
 						"Señor Zero tranquilícese, solo es un apagón, Williams ahora lo arr--"];
-				speakers = [id, objLaria, objEzra, objNathan, objCharles, id];
+				speakers = [id, objLaria, objEzra, objNathan, objCharles, objPlayer];
 				next_line=[0, 0, 0, 0, 0, -1];
 				activate_textbox = create_textbox(text, speakers, next_line);
 				global.scene++;
 			}
 		}
 		break;
-	case 65:
+	case 65: // Cambio de sitio de los sprites
 		with(objCharles){
 			if (!instance_exists(activate_textbox)) {
 				with(objNathan){
+					visible = false;
 					x = 288;
 					y = 608;
-					image_index = 1;
+					sprite_index = sprNathanIdleLeft;
 				}
 				with(objEzra){
+					visible = false;
 					x = 912;
 					y = 480;
-					image_index = 0;
-				}
-				with(objLaria){
-					image_index = 1;
+					sprite_index = sprEzraIdleDown;
 				}
 				with(objCharles){
-					image_index = 2;
+					visible = false;
+					sprite_index = sprCharlesIdleUp;
+				}
+				with(objLaria){
+					visible = false;
+					sprite_index = sprLariaIdleLeft;
+				}
+				with (objPlayer) {
+					visible = false;
 				}
 				audio_play_sound(sndDisparo, 1, false);
 				objGame.alarm[0] = 120;
@@ -673,14 +697,20 @@ switch(global.scene){
 		break;
 	case 66:
 		break;
-	case 67:
+	case 67: // Retardo para ver la escena cuando 
 		instance_destroy(o_surface_Light);
+		objNathan.visible = true;
+		objEzra.visible = true;
+		objEzra.visible = true;
+		objCharles.visible = true;
+		objPlayer.visible = true;
+		objLaria.visible=true;
 		alarm[0] = 40;
 		global.scene++;
 		break;
 	case 68:
 		break;
-	case 69:
+	case 69: // Diálogos despues de ver la muerte
 		with (objPlayer){
 			text = ["¡¡AAAAAAAAAAAAAAHHHHHHHH!! ¡¡ESTÁ MUERTO!! ¡¿QUÉHA PASADO?!",
 					"¡¿Qué?! ¡No puede ser! Esto es... una tragedia... ¿QUIÉN HA SIDO?",
@@ -705,42 +735,33 @@ switch(global.scene){
 		break;
 	case 71:
 		break;
-	case 72:
+	case 72: // Nathan va hacia el cuerpo muerto
 		with (objNathan) {
-			image_index = 3;
+			sprite_index = sprNathanRight;
 			hspeed = +2;
 		}
 		global.scene++;
 		break;
-	case 73:
+	case 73: // objNathan se para horizontalmente delante del cadaver
 		with(objNathan){
-			if(x >= objTarta.x + 64){
+			if(x >= objCharles.x){
 				hspeed = 0;
-				image_index = 2;
+				sprite_index = sprNathanIdleUp;
 				vspeed = -2;
 				global.scene++;
 			}
 		}
 		break;
-	case 74:
+	case 74: // objNathan se para delante verticalmente del cadaver
 		with(objNathan){
-			if(y <= objTarta.y - 32){
+			if (y <= objCharles.y){
 				vspeed = 0;
-				image_index = 3;
-				hspeed = 2;
+				sprite_index = sprNathanIdleUp;
 				global.scene++;
 			}
 		}
 		break;
-	case 75:
-		with(objNathan){
-			if(x >= 945){
-				instance_destroy();
-				global.scene++;
-			}
-		}
-		break;
-	case 76:
+	case 75: // Ultimo dialogo anyes de moverse de objPlayer
 		with (objPlayer){
 			text = ["No me esperaba que esto terminase así, pero llegué a este barco para hacer mi trabajo y eso haré. INVESTIGAR ESTE ASESINATO"];
 			speakers = [id];
@@ -749,7 +770,7 @@ switch(global.scene){
 			global.scene++;
 		}
 		break;
-	case 77:
+	case 76: // objPlayer se mueve
 		with(objPlayer){
 			if (!instance_exists(activate_textbox)) {
 				global.scene++;
@@ -761,6 +782,7 @@ switch(global.scene){
 			}
 		}
 		break;
+	#endregion
 }
 
 switch(global.scene2){

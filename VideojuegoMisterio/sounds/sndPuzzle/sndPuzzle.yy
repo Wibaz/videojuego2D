@@ -3,7 +3,7 @@
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "sndPuzzle",
-    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "audioGroupGuid": "16c93344-a4a6-4934-8a0e-f8d2e135c23c",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,
