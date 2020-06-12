@@ -6,7 +6,7 @@ event_inherited();
 portrait_index = 1;
 voice = snd_voice2;
 name = "Reed";
-text= ["(Una estanteria llena de libros.)"];
+text= ["(Una estantería llena de libros.)"];
 speakers = [id];
 next_line=[-1]
 

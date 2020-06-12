@@ -703,6 +703,7 @@ switch(global.scene){
 		objEzra.visible = true;
 		objEzra.visible = true;
 		objCharles.visible = true;
+		instance_create_depth(objCharles.x+32,objCharles.y,depth,objBlood);
 		objPlayer.visible = true;
 		objLaria.visible=true;
 		alarm[0] = 40;

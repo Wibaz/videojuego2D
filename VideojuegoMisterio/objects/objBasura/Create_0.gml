@@ -9,7 +9,7 @@ name = "Reed";
 //global.IbukiParla = true;
 if(global.IbukiParla){
 	global.PlacaBase = true;
-text = ["¡Has conseguido una placa base!.","(¿Que hacia una placa base aqui?)"];
+text = ["¡Has conseguido una placa base!.","(¿Que hacía una placa base aquí?)"];
 speakers = [id,id];
 next_line=[0,-1]
 }else{

@@ -1,4 +1,4 @@
-if(objWhite.Texto == "a"){
+if(objWhite.Texto == "Vindication"){
 	objPlayer.visible=true;
 	objPlayer.x =orgX
 	objPlayer.y =orgY

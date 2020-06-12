@@ -3,4 +3,8 @@
 
 // Inherit the parent event
 event_inherited();
+if(room!=Salon)
+	visible=false;
+else
+	visible=true;
 

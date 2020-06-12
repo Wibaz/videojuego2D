@@ -13,7 +13,7 @@ speakers = [id,id];
 next_line=[0,-1]
 }
 else {
-text= ["(Es una estanteria con luces.)"];
+text= ["(Es una estantería con luces.)"];
 speakers = [id];
 next_line=[-1]
 }

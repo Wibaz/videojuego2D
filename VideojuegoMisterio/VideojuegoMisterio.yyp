@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "13a849bb-189f-490f-834f-91be614ed174",
+            "Value": {
+                "id": "bdf3acdd-2a94-4391-ac9e-913f5f8a8056",
+                "resourcePath": "objects\\objBlood\\objBlood.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "141485c3-7abb-4576-81ea-e1f748621d3c",
             "Value": {
                 "id": "d37cab58-74d7-49f3-88f2-f60436666eb1",
@@ -876,6 +884,14 @@
                 "id": "b9d18739-18e5-417b-b97e-c21d78d2e705",
                 "resourcePath": "objects\/objPasilloCamaroteN1\/objPasilloCamaroteN1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "65cfac83-f9c2-45b6-bc8a-077736c13aed",
+            "Value": {
+                "id": "28ccb202-91ca-4622-8e99-544202749ea7",
+                "resourcePath": "sprites\\sprCharlesIdleUp1\\sprCharlesIdleUp1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2148,6 +2164,14 @@
                 "id": "f263e741-e8aa-4b1d-8417-6b666423965f",
                 "resourcePath": "sprites\\sprIbukiDown\\sprIbukiDown.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f11bcfa0-3bee-4775-9da3-25de220dfe74",
+            "Value": {
+                "id": "70507c48-be59-47a8-b6ac-78e09a8a3c6e",
+                "resourcePath": "objects\\objEscenaFinal\\objEscenaFinal.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -6,7 +6,7 @@ event_inherited();
 portrait_index = 1;
 voice = snd_voice2;
 name = "Reed";
-text= ["(Nunca he aguantado los juegos de apuestas y menos aun si se basan en la suerte.)"];
+text= ["(Nunca he aguantado los juegos de apuestas y menos aún si se basan en la suerte.)"];
 speakers = [id];
 next_line=[-1]
 

@@ -8,14 +8,9 @@ event_inherited();
 portrait_index = 0;
 voice = snd_voice1;
 name = "Ezra";
-text = [
-	"Hey, my name is Erza. Jejeje.",
-	[
-		"Opción 1",
-		"Texto opcion 1"
-	],
-	"You were given the powers of the dead.",
-	"Oh papa, has elegido la opción 2......"
-];
-speakers = [id, objPlayer, id, id];
-next_line = [0, [2, 3], -1, -1];
+if(!global.FinAnimacion)
+{
+	text = ["(Parece estar hablando con esa señora.)"];
+	speakers = [objPlayer];
+	next_line = [-1];
+}
