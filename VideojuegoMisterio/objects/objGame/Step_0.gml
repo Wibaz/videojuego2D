@@ -752,12 +752,12 @@ switch(global.scene){
 	case 77:
 		with(objPlayer){
 			if (!instance_exists(activate_textbox)) {
-				playerMove = true;
 				global.scene++;
 				global.FinAnimacion=true;
 				objCharles.text=["No me creo que este muerto."]
 				objCharles.speakers=[objPlayer]
 				objCharles.next_line=[-1]
+				playerMove = true;
 			}
 		}
 		break;
@@ -767,6 +767,24 @@ switch(global.scene2){
 	case 0:
 		break;
 	case 1:
+	with(objPlayer){
+		playerMove=false;
+		vspeed=2;
+		sprite_index = sprPlayerDown;
+		global.scene2++;
+		}
+		break;
+	case 2:
+		with(objPlayer){
+			if(y >=160){
+				vspeed = 0;
+				image_index=0;
+				global.scene2++;
+			}
+		}
+		break;
+	
+	case 3:
 		with (objPlayer){
 			{
 			playerMove = false;
@@ -788,11 +806,16 @@ switch(global.scene2){
 			speakers = [id,id,id,id,id,id,id,id,id,id,id,id,id,id,id];
 			next_line=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1];
 			activate_textbox = create_textbox(text, speakers, next_line);
-			global.scene++;
-			}
+			}		
+		}
+		global.scene2++;
+		break;
+	case 4:
+		if(!instance_exists(objPlayer.activate_textbox)){
+			objPlayer.playerMove = true;
+			global.scene2++;
 		}
 		break;
-	case 2:
-		objPlayer.playerMove = true;
+	case 5:
 		break;
 }

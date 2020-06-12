@@ -71,6 +71,7 @@ if(input_interact) {
 			}
 			active_textbox = tbox;
 		}
+		objPlayer.playerMove=false;
 	}
 	else {
 		if (!instance_exists(active_textbox)) {

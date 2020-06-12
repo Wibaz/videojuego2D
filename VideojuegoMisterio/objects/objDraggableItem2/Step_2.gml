@@ -10,6 +10,8 @@ if(x==512 && y==64)
 		objGame.state = "IN_ROOM_TRANSITION_ENTER";
 	}
 	else {
+		objPlayer.input_interact=false
+		objPlayer.playerMove=true;
 		room_goto (Cubierta);
 		objPlayer.x = 476;
 		objPlayer.y = 315;

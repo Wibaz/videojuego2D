@@ -383,14 +383,6 @@
             }
         },
         {
-            "Key": "2a7bb9e7-fe55-42e2-93ad-5be5ba17f645",
-            "Value": {
-                "id": "196ce457-55e1-4a17-a308-82371f87a5a5",
-                "resourcePath": "objects\/objTextBox\/objTextBox.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2bd67808-35d1-4da3-aefa-7adc268bee9c",
             "Value": {
                 "id": "6c519bb9-5ff2-4ff4-b972-8eed1a8fd217",
