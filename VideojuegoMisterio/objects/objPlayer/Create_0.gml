@@ -18,3 +18,4 @@ global.HardDisk = false;
 global.serverOkay=false;
 global.FinAnimacion=false;
 global.DestruirFinAnimacion=false;
+global.EscenaFinal=false;
