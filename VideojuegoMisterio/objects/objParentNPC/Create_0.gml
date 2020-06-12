@@ -3,8 +3,6 @@ myName = "";
 myText[0] = "";
 
 //Lo nuevo
-can_move = true;
-
 portrait_index = 0;
 voice = snd_voice1;
 name = "Anonymous";

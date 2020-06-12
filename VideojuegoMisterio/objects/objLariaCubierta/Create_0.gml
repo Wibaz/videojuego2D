@@ -12,8 +12,8 @@ voice = snd_voice3;
 name = "Laria";
 if(!global.Key)
 {
-	text = ["Por lo que veo, usted también ha llegado a la misma conclusión.","¿Por qué lo dices?", "¡Oh! Le creía más inteligente, pero parece que me había equivocado.","Si me disculpa, voy a seguir buscando."];
-	speakers = [id,objPlayer,id, id];
+	text = ["¿Que haces buscando entre los cargamentos?","Ezra me dijo que la llave de su cuarto se encontraba por aquí.","(Yo tambien deberia ponerme a buscar.)"];
+	speakers = [objPlayer,id,objPlayer];
 	next_line=[0,0,0,-1];
 }
 else if (global.Key && !global.IbukiParla)

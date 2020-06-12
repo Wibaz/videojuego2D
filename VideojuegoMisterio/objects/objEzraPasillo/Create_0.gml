@@ -4,25 +4,15 @@
 // Inherit the parent event
 event_inherited();
 
-myTextBox = noone;
-myName = "Ezra";
-
-myText[0] = "Hey, my name is Erza";
-myText[1] = "You were given the powers of the dead.";
-myText[2] = "But even that is only temporary.";
-myText[3] = "When the sun rises in the morning...";
-myText[4] = "I'm afraid you're going to cease to exit.";
-myText[5] = "jejejeje jejejeje jejejejejejejjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj";
-
 //Nuevo
 portrait_index = 0;
 voice = snd_voice1;
 name = "Ezra";
 if(!global.Key)
 {
-	text = ["(Alguien está llorando en el camarote de al lado. Debe ser la mujer de vestido rosa, creo que se llamaba Ibuki.)","¿Esta Ibuki dentro?.","Presumiblemente sí.", "Aun así, no te preocupes por ella ahora, se le pasará pronto.","Tendrías que preocuparte más por tí mismo, estas demasiado relajado. Parece que estuvieras acostumbrado a esto","No creas. Si me disculpas tengo que dejar de hablar contigo ahora mismo.","Touché."];
-	speakers = [objPlayer,objPlayer,id,id,id,objPlayer,id];
-	next_line=[0,0,0,0,0,0,-1];
+	text = ["(Alguien está llorando en el camarote de al lado. Debe ser la mujer de vestido rosa, creo que se llamaba Ibuki.)","¿Esta Ibuki dentro?.","Presumiblemente sí, la puerta esta cerrada.", "Aun así, no te preocupes por ella ahora, se le pasará pronto.","Tendrías que preocuparte más por tí mismo, estas demasiado relajado. Parece que estuvieras acostumbrado a esto","No creas. Si me disculpas tengo que dejar de hablar contigo ahora mismo.","Touché.","(Deberia buscar la llave por los alrededores del barco igual alguien sabe donde esta.)"];
+	speakers = [objPlayer,objPlayer,id,id,id,objPlayer,id,objPlayer];
+	next_line=[0,0,0,0,0,0,0,-1];
 }
 else if (global.Key && !global.IbukiParla)
 {

@@ -65,13 +65,12 @@ if(input_interact) {
 		if (inst != noone){
 			with(inst) {
 				var tbox = create_textbox(text, speakers, next_line);
-				can_move = false;
 				movX = 0;
 				movY = 0;
 			}
 			active_textbox = tbox;
 		}
-		objPlayer.playerMove=false;
+		//objPlayer.playerMove=false;
 	}
 	else {
 		if (!instance_exists(active_textbox)) {

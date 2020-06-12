@@ -34,5 +34,5 @@ if (choice_dialogue) {
 		choice = text_array_len - 1;
 	}
 }
-if(name == "Ibuki")
+if(name == "Ibuki" && global.FinAnimacion)
 	global.IbukiParla=true;

@@ -3,7 +3,6 @@
 if(!global.HardDisk || !global.PlacaBase || !global.FuenteDeAlimentacion)
 {
 	//Lo nuevo
-	can_move = true;
 	portrait_index = 1;
 	voice = snd_voice2;
 	name = "Reed";
@@ -13,7 +12,6 @@ if(!global.HardDisk || !global.PlacaBase || !global.FuenteDeAlimentacion)
 }
 else if(global.serverOkay)
 {
-	can_move = true;
 	portrait_index = 1;
 	voice = snd_voice2;
 	name = "Reed";
@@ -23,7 +21,6 @@ else if(global.serverOkay)
 }
 else
 {
-	can_move = true;
 	portrait_index = 1;
 	voice = snd_voice2;
 	name = "Reed";
