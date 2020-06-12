@@ -107,6 +107,20 @@
             "value": "True",
             "varName": "NoSuena",
             "varType": 3
+        },
+        {
+            "id": "195a4f97-658c-402a-ab7f-6e2ad325b2fe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "musicaPuzzle1",
+            "varType": 3
         }
     ],
     "solid": false,

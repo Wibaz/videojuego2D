@@ -842,3 +842,53 @@ switch(global.scene2){
 	case 5:
 		break;
 }
+switch(global.scene3){
+	case 0: // objPlayer va a tomar tarta
+		with(objEzraSalon) {
+			if ((objPlayer.x >= x - 16) && (objPlayer.x <= x + 16) &&
+				(objPlayer.y >= y) && (objPlayer.y <= y + 64) &&
+				keyboard_check_pressed(global.key_interact))
+			{
+				instance_destroy(obj_textbox);
+				objPlayer.playerMove = false;
+				global.scene3++;
+			}
+		}
+	break;
+case 1: // 1º Dialogo objLaira
+	with(objEzraSalon){
+		activate_textbox = create_textbox(text, speakers, next_line);
+	}
+	global.scene3++;
+	break;
+case 2:
+	with (objEzraSalon) {
+		if (!instance_exists(activate_textbox)) {
+			objPlayer.visible = false;
+			instance_destroy(objCharles)
+			objEzraSalon.visible = false;
+			instance_destroy(objEzraSalon);
+			objCapitan.visible = false;
+			objBlood.visible = false;
+			objTarta.visible = false;
+			instance_create_depth(0,0, 1000, objEscenaFinal);
+			global.scene3++;
+			
+		}
+	}
+	break;
+case 3:
+	if (o_surface_Light.claridad == 1) {
+		objEscenaFinal.primeraEscena = false;
+		instance_destroy(o_surface_Light);
+		objEscenaFinal.sprite_index = sprFondoPortada;
+		alarm[1] = 120;
+		global.scene3++;
+	}
+	break;
+case 4:
+	break;
+case 5:
+	game_end();
+	break;
+}
