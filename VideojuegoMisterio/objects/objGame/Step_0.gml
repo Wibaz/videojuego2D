@@ -170,7 +170,7 @@ switch(global.scene){
 			objNathan.sprite_index = sprNathanIdleRight;
 			instance_create_depth(816, 592, 1, objEzra);
 			objEzra.sprite_index = sprEzraIdleLeft;
-			instance_create_depth(656, objTarta.y - 32, 1, objLaria);
+			instance_create_depth(656, objTarta.y - 32, 0, objLaria);
 			objLaria.sprite_index = sprLariaIdleLeft;
 			instance_create_depth(752, 592, 1, objIbukiCamarote);
 			objIbukiCamarote.sprite_index = sprIbukiIdleRight;
@@ -178,7 +178,7 @@ switch(global.scene){
 			with(objPlayer){
 				hspeed = 0;
 				instance_create_depth(x, y - 32, 1, objManoDerecha);
-				sprite_index = sprPlayerUp;
+				sprite_index = sprPlayerIddleUp;
 			}
 			alarm[0] = 100;
 			global.scene++;
@@ -264,7 +264,7 @@ switch(global.scene){
 		break;
 	case 26: // objEzra habla con objPlayer
 		if(objEzra.y <= objPlayer.y + 32){
-			objPlayer.sprite_index = sprPlayerDown;
+			objPlayer.sprite_index = sprPlayerIddleDown;
 			with(objEzra){
 				vspeed = 0;
 				text = ["Hey, buenas noches. Oye, tu cara no me suena nada, ¿es la primera vez que te invitan a estas fiestas?",
@@ -410,7 +410,7 @@ switch(global.scene){
 		with(objIbukiCamarote){
 			if (x <= 720) {
 				hspeed = 0;
-				sprite_index = sprIbukiUp;
+				sprite_index = sprIbukiIdleUp;
 				global.scene++;
 			}
 		}
@@ -650,6 +650,30 @@ switch(global.scene){
 			if (!instance_exists(activate_textbox)) {
 				instance_create_layer(0, 0, "Luz", o_surface_Light);
 				o_surface_Light.claridad = 1;
+				objTarta.visible = false;
+				objCharles.visible = false;
+				with(objNathan){
+					visible = false;
+					depth = 1;
+					x = 288;
+					y = 608;
+					sprite_index = sprNathanIdleLeft;
+				}
+				with(objEzra){
+					visible = false;
+					x = 912;
+					y = 480;
+					sprite_index = sprEzraIdleDown;
+				}
+				depth = 2;
+				sprite_index = sprCharlesIdleUp;
+				with(objLaria){
+					visible = false;
+					sprite_index = sprLariaIdleLeft;
+				}
+				with (objPlayer) {
+					visible = false;
+				}
 				text = ["Eh... ¿Y las luces?",
 						"¡AHHHHH! ¡¿QUÉ ESTÁ PASANDO?! ¡NO VEO NADA!",
 						"¡ESPERA! ¿un apagón? ¡Ja ja esto se pone interesante! La caja de control estaba a la entrada ¿no? Voy a ver si lo arreglo...",
@@ -666,50 +690,39 @@ switch(global.scene){
 	case 65: // Cambio de sitio de los sprites
 		with(objCharles){
 			if (!instance_exists(activate_textbox)) {
-				with(objNathan){
-					visible = false;
-					x = 288;
-					y = 608;
-					sprite_index = sprNathanIdleLeft;
-				}
-				with(objEzra){
-					visible = false;
-					x = 912;
-					y = 480;
-					sprite_index = sprEzraIdleDown;
-				}
-				with(objCharles){
-					visible = false;
-					sprite_index = sprCharlesIdleUp;
-				}
-				with(objLaria){
-					visible = false;
-					sprite_index = sprLariaIdleLeft;
-				}
-				with (objPlayer) {
-					visible = false;
-				}
+				
 				audio_play_sound(sndDisparo, 1, false);
 				objGame.alarm[0] = 120;
+				instance_create_depth(objCharles.x+32,objCharles.y, 3,objBlood);
+				objBlood.visible = false;
+				objBlood.image_xscale = 0.8;
+				objBlood.image_yscale = 0.8;
 				global.scene++;
 			}
 		}
 		break;
 	case 66:
 		break;
-	case 67: // Retardo para ver la escena cuando 
+	case 67:
 		instance_destroy(o_surface_Light);
+		objBlood.visible = true;
+		objTarta.visible = true;
 		objNathan.visible = true;
 		objEzra.visible = true;
 		objEzra.visible = true;
 		objCharles.visible = true;
-		instance_create_depth(objCharles.x+32,objCharles.y,depth,objBlood);
 		objPlayer.visible = true;
 		objLaria.visible=true;
-		alarm[0] = 40;
 		global.scene++;
 		break;
-	case 68:
+	case 68: // Retardo para ver la escena cuando 
+		if (objBlood.image_xscale <= 1) {
+			objBlood.image_xscale += 0.001;
+			objBlood.image_yscale += 0.001;
+		}
+		else {
+			global.scene++;
+		}
 		break;
 	case 69: // Diálogos despues de ver la muerte
 		with (objPlayer){

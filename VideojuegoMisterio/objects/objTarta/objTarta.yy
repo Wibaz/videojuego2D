@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "objTarta",
     "eventList": [
-        
+        {
+            "id": "e9c2b2cc-33da-4cf3-bade-03f81b9a99ba",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "8d2f20e4-af41-4ea9-afc3-fa12925863bd"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
