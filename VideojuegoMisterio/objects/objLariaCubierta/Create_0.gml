@@ -13,7 +13,7 @@ if(!global.Key)
 }
 else if (global.Key && !global.IbukiParla)
 {
-	text = ["Así que ahí estaba la llave","Le felicito por encontrarla", "Gracias... Supongo.","Me voy adelantando al cuarto de Ibuki."];
+	text = ["Así que ahí estaba la llave.","Le felicito por encontrarla.", "Gracias... Supongo.","Me voy adelantando al cuarto de Ibuki."];
 	speakers = [id,id,objPlayer, objPlayer];
 	next_line=[0,0,0,-1];
 }

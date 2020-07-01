@@ -275,7 +275,7 @@ switch(global.scene){
 						"Espera, ese nombre sí me suena, salió en las noticas hace poco...",
 						"¡Por supuesto! Todos mis libros son best-Sellers, seguro que dijeron algo de mi última novela.",
 						"Lo que tu digas... Soy Reed, por cierto. Y con eso es suficiente.",
-						"Así que hombre de misterio ¿eh? Esto se pone interesante... ¿Parece que las fuerzas oscuras me han oído desde el inframundo!"];
+						"Así que hombre de misterio ¿eh? Esto se pone interesante... ¡Parece que las fuerzas oscuras me han oído desde el inframundo!"];
 				speakers = [id, objPlayer, id, objPlayer, id, objPlayer, id, objPlayer, id];
 				next_line = [0, 0, 0, 0, 0, 0, 0, 0, -1];
 				activate_textbox = create_textbox(text, speakers, next_line);
@@ -837,8 +837,8 @@ switch(global.scene2){
 			"Pareja de Ibuki. Es el mas peligroso de todos.",
 			"Wax Reed: Antiguo policia el cual fue acusado por un crimen, decidio retirarse en vez de manchar su honor como oficial.",
 			"Me servira como protección ante los invitado.",
-			"Todos tenian deudas con Charlse Zero, iamgino que los invito para resolverlas pero por desgracia le salio mal la jugada.",
-			"Seguramente alguno de ellos decidio matarlo, que mas dudas me genera es Ezra debería intentar sacarle información."];
+			"Todos tenían deudas con Charlse Zero, imagino que los invitó para resolverlas pero por desgracia le salio mal la jugada.",
+			"Seguramente alguno de ellos decidió matarlo, el que mas dudas me genera es Ezra debería intentar sacarle información."];
 			speakers = [id,id,id,id,id,id,id,id,id,id,id,id,id,id,id];
 			next_line=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1];
 			activate_textbox = create_textbox(text, speakers, next_line);
@@ -878,6 +878,9 @@ case 2:
 	with (objEzraSalon) {
 		if (!instance_exists(activate_textbox)) {
 			objPlayer.visible = false;
+			objBlood.visible = false;
+			instance_destroy(objManagerMusic);
+			audio_play_sound(sndDisparo, 1, false);
 			instance_destroy(objCharles)
 			objEzraSalon.visible = false;
 			instance_destroy(objEzraSalon);
