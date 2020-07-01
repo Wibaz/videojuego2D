@@ -44,4 +44,6 @@ draw_set_font(font);
 text_height = string_height("M");
 choice = 0;
 choice_col = c_white;
-//objPlayer.playerMove=false;
+
+objPlayer.speed = 0;
+objPlayer.playerMove = false;
