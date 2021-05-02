@@ -10,7 +10,7 @@ voice = snd_voice1;
 name = "Ezra";
 if(!global.Key)
 {
-	text = ["(Alguien está llorando en el camarote de al lado. Debe ser la mujer de vestido rosa, creo que se llamaba Ibuki.)","¿Esta Ibuki dentro?.","Presumiblemente sí, la puerta esta cerrada.", "Aun así, no te preocupes por ella ahora, se le pasará pronto.","Tendrías que preocuparte más por tí mismo, estas demasiado relajado. Parece que estuvieras acostumbrado a esto.","No creas. Si me disculpas tengo que dejar de hablar contigo ahora mismo.","Touché.","(Deberia buscar la llave por los alrededores del barco igual alguien sabe donde esta.)"];
+	text = ["(Alguien está llorando en el camarote de al lado. Debe ser la mujer de vestido rosa, creo que se llamaba Ibuki.)","¿Esta Ibuki dentro?","Presumiblemente sí, la puerta esta cerrada.", "Aun así, no te preocupes por ella ahora, se le pasará pronto.","Tendrías que preocuparte más por tí mismo, estas demasiado relajado. Parece que estuvieras acostumbrado a esto.","No creas. Si me disculpas tengo que dejar de hablar contigo ahora mismo.","Touché.","(Deberia buscar la llave por los alrededores del barco igual alguien sabe donde esta.)"];
 	speakers = [objPlayer,objPlayer,id,id,id,objPlayer,id,objPlayer];
 	next_line=[0,0,0,0,0,0,0,-1];
 }

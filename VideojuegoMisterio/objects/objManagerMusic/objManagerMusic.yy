@@ -121,6 +121,20 @@
             "value": "0",
             "varName": "musicaPuzzle1",
             "varType": 3
+        },
+        {
+            "id": "497be95c-4319-4842-a4d8-6ace9d878901",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "musicaMenu1",
+            "varType": 3
         }
     ],
     "solid": false,

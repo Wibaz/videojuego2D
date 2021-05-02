@@ -726,7 +726,7 @@ switch(global.scene){
 		break;
 	case 69: // Diálogos despues de ver la muerte
 		with (objPlayer){
-			text = ["¡¡AAAAAAAAAAAAAAHHHHHHHH!! ¡¡ESTÁ MUERTO!! ¡¿QUÉHA PASADO?!",
+			text = ["¡¡AAAAAAAAAAAAAAHHHHHHHH!! ¡¡ESTÁ MUERTO!! ¡¿QUÉ HA PASADO?!",
 					"¡¿Qué?! ¡No puede ser! Esto es... una tragedia... ¿QUIÉN HA SIDO?",
 					"Dios...",
 					"¡¿CÓMO?!",

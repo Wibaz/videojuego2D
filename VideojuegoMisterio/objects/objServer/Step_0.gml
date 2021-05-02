@@ -15,7 +15,7 @@ else if(global.serverOkay)
 	portrait_index = 1;
 	voice = snd_voice2;
 	name = "Reed";
-	text = ["Todo parece en orden por aqui mejor miro el ordenador."];
+	text = ["Todo parece en orden por aqui mejor miro el ordenador que esta encima de la mesa."];
 	speakers = [id];
 	next_line = [-1];
 }

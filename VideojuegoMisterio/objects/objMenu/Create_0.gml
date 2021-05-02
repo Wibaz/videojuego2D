@@ -1,3 +1,5 @@
+window_set_fullscreen(true);
+
 global.scene		= 0;
 global.scene2		=0;
 global.scene3		= 0;
@@ -56,7 +58,7 @@ ds_menu_audio = create_menu_page(
 
 ds_menu_graphics = create_menu_page(
 	["RESOLUTION",	menu_element_type.shift,			change_resolution,		0,		["800 x 600", "1024 x 768", "1280 x 1024", "1366 x 768", "1600 x 900", "1920 x 1080", "2560 x 1440"]],
-	["WINDOW MODE",	menu_element_type.toggle,			change_window_mode,		1,		["FULLSCREEN", "WINDOWED"]],
+	["FULLSCREEN",	menu_element_type.toggle,			change_window_mode,		0,		["FULLSCREEN", "WINDOWED"]],
 	["BACK",		menu_element_type.page_transfer,	menu_page.settings],
 );
 
