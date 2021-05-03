@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "08eba511-7293-4184-9d65-9c37dc34232f",
+            "Value": {
+                "id": "81ab42da-34d2-4896-a4cd-9a7f0aa4fd6f",
+                "resourcePath": "objects\\WASD\\WASD.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0937d4ed-fd96-4dc6-9186-a318b233ca83",
             "Value": {
                 "id": "69e28534-cdd1-4c29-9dff-a35381e0d007",
@@ -911,6 +919,14 @@
             }
         },
         {
+            "Key": "68a2b6b2-d593-4636-9954-e0c682465675",
+            "Value": {
+                "id": "ccdb868a-8ea5-49cf-b704-eeb77cb4d123",
+                "resourcePath": "sprites\\sprInteractuar\\sprInteractuar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "68cf7348-54c5-4155-9826-400c50ae34f4",
             "Value": {
                 "id": "bfcda2e3-9405-48ae-91ad-eab9ecfd0d11",
@@ -948,6 +964,14 @@
                 "id": "1e51f49b-3a9f-49cc-a8dd-cf06b41863c0",
                 "resourcePath": "sprites\/sprPlayerIddleLeft\/sprPlayerIddleLeft.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6d165098-8610-4128-9861-d438499d1832",
+            "Value": {
+                "id": "a231a809-ff37-4c57-bfa4-32a820b7cf73",
+                "resourcePath": "objects\\temporal\\temporal.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1551,6 +1575,14 @@
             }
         },
         {
+            "Key": "afcb9229-f3e2-4161-8d5a-0cf8045956db",
+            "Value": {
+                "id": "5b44040e-b709-4f1e-abff-d657d65518af",
+                "resourcePath": "sprites\\sprWASD\\sprWASD.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b10c8849-2609-4d90-8bfc-079c55e8f2f4",
             "Value": {
                 "id": "a44868de-2574-481c-b47c-b06782a397fd",
@@ -1636,6 +1668,14 @@
                 "id": "95583076-6257-415c-a9fa-8d94bdb8869a",
                 "resourcePath": "sprites\/sprCharlesRight\/sprCharlesRight.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba64e8ad-804e-4430-84f1-4ba8174ba8dc",
+            "Value": {
+                "id": "3769b796-a15e-4261-8e22-21f265cce0a7",
+                "resourcePath": "objects\\Interactuar\\Interactuar.yy",
+                "resourceType": "GMObject"
             }
         },
         {

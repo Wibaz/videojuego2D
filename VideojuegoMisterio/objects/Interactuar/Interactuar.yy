@@ -1,23 +1,14 @@
 {
-    "id": "0937d4ed-fd96-4dc6-9186-a318b233ca83",
+    "id": "ba64e8ad-804e-4430-84f1-4ba8174ba8dc",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objCocinero1",
+    "name": "Interactuar",
     "eventList": [
-        {
-            "id": "4567369f-d538-4247-973e-1e4cda7c191e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "0937d4ed-fd96-4dc6-9186-a318b233ca83"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "8aec8dee-63d7-43e9-bb01-61263b73284c",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "22aae352-03cd-4070-9b53-226913d205dc",
+    "spriteId": "68a2b6b2-d593-4636-9954-e0c682465675",
     "visible": true
 }
