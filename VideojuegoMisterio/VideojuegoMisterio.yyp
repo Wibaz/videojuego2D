@@ -1103,6 +1103,14 @@
             }
         },
         {
+            "Key": "7fc43a96-86fc-45d7-8a1a-58f80d31dbda",
+            "Value": {
+                "id": "b2a4a880-89d0-46e5-be68-93b91cebbe18",
+                "resourcePath": "sprites\\sprFondoPortadav2\\sprFondoPortadav2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8021f16c-95b0-4982-9798-43cb470e0233",
             "Value": {
                 "id": "a3bc76b4-f82b-4aa0-a982-151a15e655f5",

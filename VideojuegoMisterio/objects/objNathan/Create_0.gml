@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-
+instance_create_depth(x,y,1,objInvisibleWall);
 
 //Nuevo
 portrait_index = 2;

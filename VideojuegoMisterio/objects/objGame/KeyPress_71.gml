@@ -13,7 +13,7 @@ ini_read_real("Controles", "INTERACT",	global.key_interact);
 ini_read_real("Controles", "ESCAPE",	global.key_escape);
 ini_read_real("VariableGlobal", "Key",	global.Key);
 ini_read_real("VariableGlobal", "Puzzle2Completado",	global.Puzzle2Completado);
-ini_read_real("VariableGlobal", "IbukiParla",	global.IbukiParla);
+ini_read_real("VariableGlobal", "IbukiParla2",	global.IbukiParla2);
 ini_read_real("VariableGlobal", "DestruirIbuki",	global.DestruirIbuki);
 ini_read_real("VariableGlobal", "DestruirOtrosNPC",	global.DestruirOtrosNPC);
 ini_read_real("VariableGlobal", "FuenteDeAlimentacion",	global.FuenteDeAlimentacion);

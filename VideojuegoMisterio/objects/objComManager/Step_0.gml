@@ -3,9 +3,9 @@ if (objPower.Colocado && objPlacaBase.Colocado && objHardDisk.Colocado)
 {
     global.serverOkay = true;
 	objPlayer.visible=true;
+	objPlayer.x = 192;
+	objPlayer.y = 112;
     room_goto(camaroteImportante);
-	objPlayer.x = orgX;
-	objPlayer.y = orgY;
 }
 
 //Colocamos y checkeamos cada pieza en su sitio

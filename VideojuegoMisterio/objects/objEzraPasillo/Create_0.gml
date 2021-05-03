@@ -14,13 +14,13 @@ if(!global.Key)
 	speakers = [objPlayer,objPlayer,id,id,id,objPlayer,id,objPlayer];
 	next_line=[0,0,0,0,0,0,0,-1];
 }
-else if (global.Key && !global.IbukiParla)
+else if (global.Key && !global.IbukiParla2)
 {
 	text = ["Ya tienes la llave por lo que veo.","Aun así deberías pasar de Ibuki.", "Creo que prefiero ignorar sus consejos.","(Espero que la policía llegue pronto, no aguanto a esta gente.)"];
 	speakers = [id,id,objPlayer,objPlayer];
 	next_line=[0,0,0,-1];
 }
-else if (global.IbukiParla && !global.Puzzle2Completado)
+else if (global.IbukiParla2 && !global.Puzzle2Completado)
 {
 	text = ["Ya se ha calmado, ves como se le pasaria.", "(No gracias a usted...)","¿Has dicho algo?","No. Nada absolutamente nada.","Me habia parecido escuchar algo.","Si te aburres puedes intentar arreglar el ordenador de este camarote igual encuentra algo.","(¿A que se referira con eso?, creo que debería investigarlo.)"];
 	speakers = [id,objPlayer,id,objPlayer,id,id,objPlayer];

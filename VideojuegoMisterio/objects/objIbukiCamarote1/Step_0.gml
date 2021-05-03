@@ -1,2 +1,2 @@
-if(!global.IbukiParla)
+if(!global.IbukiParla2)
 	instance_destroy();

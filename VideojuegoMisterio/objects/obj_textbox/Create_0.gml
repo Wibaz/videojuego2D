@@ -1,3 +1,22 @@
+with(objPlayer) {
+		if(spritePlayer == sprPlayerDown)
+		{
+			sprite_index = sprPlayerIddleDown;
+		}
+		else if (spritePlayer == sprPlayerUp)
+		{
+			sprite_index = sprPlayerIddleUp;
+		}
+		else if (spritePlayer == sprPlayerRight)
+		{
+			sprite_index = sprPlayerIddleRight;
+		}
+		else if (spritePlayer == sprPlayerLeft)
+		{
+			sprite_index = sprPlayerIddleLeft;
+		}
+}
+
 box = spr_textbox;
 frame = spr_portrait_frame;
 portrait = spr_portraits;

@@ -190,7 +190,7 @@ switch(global.scene){
 		with(objManoDerecha){
 			text = ["Nos vemos más tarde señor Reed. Sea paciente."];
 			speakers = [id];
-			next_line=[-1];
+			next_line=[-1];			
 			activate_textbox = create_textbox(text, speakers, next_line);
 		}
 		global.scene++;
@@ -320,6 +320,7 @@ switch(global.scene){
 		with(objPlayer){
 			if (!instance_exists(activate_textbox)) {
 				objPlayer.playerMove = true;
+				global.FinAnimacion = true;
 				global.scene++;
 			}
 		}
@@ -331,6 +332,7 @@ switch(global.scene){
 		{
 			instance_destroy(obj_textbox);
 			objPlayer.playerMove = false;
+			global.FinAnimacion = false;
 			objPlayer.speed = 0;
 			objPlayer.sprite_index = sprPlayerIddleUp;
 			objTarta.sprite_index = sprTartaTerminada;
@@ -499,6 +501,7 @@ switch(global.scene){
 		with(objPlayer){
 			if (!instance_exists(activate_textbox)) {
 				playerMove = true;
+				global.FinAnimacion = true;
 				global.scene++;
 			}
 		}
@@ -510,6 +513,7 @@ switch(global.scene){
 		{
 			with(objPlayer){
 				playerMove = false;
+				global.FinAnimacion = false;
 				speed = 0;
 				sprite_index = sprPlayerIddleDown;
 			}
@@ -758,9 +762,9 @@ switch(global.scene){
 		break;
 	case 73: // objNathan se para horizontalmente delante del cadaver
 		with(objNathan){
-			if(x >= objCharles.x){
+			if(x >= (objCharles.x - 32)){
 				hspeed = 0;
-				sprite_index = sprNathanIdleUp;
+				sprite_index = sprNathanUp;
 				vspeed = -2;
 				global.scene++;
 			}
@@ -770,7 +774,7 @@ switch(global.scene){
 		with(objNathan){
 			if (y <= objCharles.y){
 				vspeed = 0;
-				sprite_index = sprNathanIdleUp;
+				sprite_index = sprNathanIdleRight;
 				global.scene++;
 			}
 		}
@@ -782,6 +786,13 @@ switch(global.scene){
 			next_line=[-1];
 			activate_textbox = create_textbox(text, speakers, next_line);
 			global.scene++;
+		}
+		with(objNathan){
+			text = ["No cabe ninguna duda... Ya esta muerto, la bala le impacto directamente en el corazón."];
+			speakers = [id];
+			next_line=[-1];
+			//activate_textbox = create_textbox(text, speakers, next_line);
+				instance_create_depth(x,y,1,objInvisibleWall);
 		}
 		break;
 	case 76: // objPlayer se mueve
@@ -812,7 +823,7 @@ switch(global.scene2){
 		break;
 	case 2:
 		with(objPlayer){
-			if(y >=160){
+			if(y >=150){
 				vspeed = 0;
 				image_index=0;
 				global.scene2++;
@@ -884,7 +895,7 @@ case 2:
 			instance_destroy(objCharles)
 			objEzraSalon.visible = false;
 			instance_destroy(objEzraSalon);
-			objCapitan.visible = false;
+			//objCapitan.visible = false;
 			objBlood.visible = false;
 			objTarta.visible = false;
 			instance_create_depth(0,0, 1000, objEscenaFinal);
@@ -897,7 +908,7 @@ case 3:
 	if (o_surface_Light.claridad == 1) {
 		objEscenaFinal.primeraEscena = false;
 		instance_destroy(o_surface_Light);
-		objEscenaFinal.sprite_index = sprFondoPortada;
+		objEscenaFinal.sprite_index = sprFondoPortadav2;
 		alarm[1] = 120;
 		global.scene3++;
 	}

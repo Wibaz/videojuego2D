@@ -4,7 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-
+//Nuevo nuevo post gg chaval
+instance_create_depth(x,y,1,objInvisibleWall);
 
 //Nuevo
 portrait_index = 3;

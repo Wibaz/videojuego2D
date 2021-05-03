@@ -1,5 +1,8 @@
 event_inherited();
 
+instance_create_depth(896,448,1,objInvisibleWall);
+instance_create_depth(912,448,1,objInvisibleWall);
+
 //Nuevo
 portrait_index = 0;
 voice = snd_voice1;
